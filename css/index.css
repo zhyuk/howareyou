@@ -394,7 +394,7 @@ section {
 #function3_section .textbox{
     width: 100%;
     height: 85%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 #function3_section .text{
     width: 20%;
@@ -423,15 +423,15 @@ section {
     width: 100%;
     text-align: center;
     position: relative;
-    top: -28.5%;
-    border: solid 1px blue;
+    top: -26.5%;
+    /* border: solid 1px blue; */
 }
 #function3_section .drug{
     width: 10%;
     margin-left: 1%;
-    border: solid 1px fuchsia;
+    /* border: solid 1px fuchsia; */
 }
-#function3_section #drug1{
+/* #function3_section #drug1{
     position: relative;
     top: 0;
     left: 34.5%;
@@ -460,7 +460,7 @@ section {
     position: relative;
     top: 0;
     left: -34.5%;
-}
+} */
 #function4_section{
     width: 100vw;
     height: 150vh;
