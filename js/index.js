@@ -1,3 +1,15 @@
+// index_section script
+let imgBox = document.getElementById("img_box")
+let newImage = "../img/mockup01.png";
+
+function index(){
+    setTimeout(function(){
+        imgBox.body.style.backgroundImage = "url(../img/mockup01.png)";
+    }, 3000);
+}
+
+// index_section script end
+
 // user_section script
 // let box1 = document.getElementById("user_box1");
 // let box2 = document.getElementById("user_box2");

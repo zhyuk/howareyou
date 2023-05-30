@@ -1,12 +1,18 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.ttf');
+    src: url('../font/Pretendard-ExtraBold.ttf');
+    src: url('../font/Pretendard-Bold.ttf');
+    src: url('../font/Pretendard-SemiBold.ttf');
+    src: url('../font/Pretendard-Medium.ttf');
+    src: url('../font/Pretendard-Regular.ttf');
+    src: url('../font/Pretendard-Light.ttf');
+    src: url('../font/Pretendard-ExtraLight.ttf');
+    src: url('../font/Pretendard-Thin.ttf');
 }
 
 body {
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     font-weight: 500;
 }
@@ -14,6 +20,7 @@ body {
 section {
     display: flex;
     margin-top: 100px;
+    background-color: white;
 }
 
 .clear {
@@ -49,11 +56,16 @@ section {
     margin-top: 1%;
     /* border: solid 1px blue; */
 }
-
-#index_section .index_mockup {
+#index_section #img_box {
     float: right;
     width: 40%;
+    height: 80%;
     margin-top: 100px;
+    background-image: url(../img/mockup01_off.png);
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px red;
 }
 
 #index_section #button_box {
@@ -78,6 +90,7 @@ section {
 
 #user_section {
     height: 100vh;
+    background-color: white;
 }
 
 #user_section #all_user {
@@ -524,7 +537,7 @@ section {
 
 #service_section{
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-color: black;
     color: #FFC800;
 }
