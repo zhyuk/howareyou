@@ -405,6 +405,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: -15%;
     /* border: solid 1px green; */
 }
 #function3_section .text p{
