@@ -1,50 +1,115 @@
-// index_section script
-let imgBox = document.getElementById("img_box")
-let newImage = "../img/mockup01.png";
+// 헤더 들어갔다가 나오는 모션
+let myHeader = document.querySelector("#header");
 
-function index(){
-    setTimeout(function(){
-        imgBox.body.style.backgroundImage = "url(../img/mockup01.png)";
-    }, 3000);
+window.addEventListener("scroll", function(){
+    console.log(window.scrollY);
+
+    if(scrollY > 150){
+        console.log("150 이상");
+        myHeader.style.height = 0;
+        myHeader.style.dispaly = "none";
+        myHeader.style.top = -100 + "px";
+    }
+    else{
+        console.log("150 이하");
+        myHeader.style.height = 100 + "px";
+        myHeader.style.dispaly = "none";
+        myHeader.style.top = 0;
+    }
+})
+
+
+// 버튼 클릭 시 화면 맨 위로 이동하는 이벤트 스크립트
+
+function scrollToTop(){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    });
 }
 
-// index_section script end
-
-// user_section script
-// let box1 = document.getElementById("user_box1");
-// let box2 = document.getElementById("user_box2");
-// let box3 = document.getElementById("user_box3");
-
-// user_section script end
-
-// function3_section script
-// let test1 = documnet.getElementById("drug1")
-// let pos = -23 + "%";
-
-// let drug = setInterval(function(){
-//     pos -= 1;
-//     test1.style.left = pos + "%";
-
-// },100);
-// function3_section script end
-
-// service_section script
-let element = document.getElementById("service_section_text");
-let opacity = 0;
-let scalePos = 0.5;
-
-let timer = setInterval(function () {
-    opacity += 0.1;
-    scalePos += 0.045;
-
-    element.style.opacity = opacity;
-    element.style.transform = `scale(${scalePos}, ${scalePos})`;
+var button = document.querySelector("#top");
+button.addEventListener("click", scrollToTop);
 
 
-    if (opacity >= 1) {
-        clearInterval(timer);
+// 약 펼치는 기능
+
+let isDrugExecuted = false;
+
+window.addEventListener("scroll", function(){
+    console.log(scrollY);
+
+    if(scrollY > 13355 && !isDrugExecuted){
+        console.log("약기능 실행");
+        drug()
+        isDrugExecuted = true;
     }
+})
+
+function drug(){
+        let drug1= document.getElementById("drug1");
+        let drug2= document.getElementById("drug2");
+        let drug3= document.getElementById("drug3");
+        let drug4= document.getElementById("drug4");
+        let drug5= document.getElementById("drug5");
+        let drug6= document.getElementById("drug6");
+        let drug7= document.getElementById("drug7");
+
+        let i = 45;
+        let p = 45;
+
+        let drugimg1 = setInterval(function () {
+            p -= 0.5;
+            drug1.style.left = p + "%";
+        
+            if (p <= 0) {
+                clearInterval(drugimg1);
+            }
+        }, 30)
+
+        let drugimg2 = setInterval(function () {
+            p -= 0.5;
+            drug2.style.left = p + "%";
+        
+            if (p <= 15) {
+                clearInterval(drugimg2);
+            }
+        }, 30)
+        let drugimg3 = setInterval(function () {
+            p -= 0.5;
+            drug3.style.left = p + "%";
+        
+            if (p <= 30) {
+                clearInterval(drugimg3);
+            }
+        }, 30)
 
 
-}, 85);
-// service_section script end
+        let drugimg5 = setInterval(function () {
+            i += 0.5;
+            drug5.style.left = i + "%";
+        
+            if (i >= 60) {
+                clearInterval(drugimg5);
+            }
+        }, 30)
+
+        let drugimg6 = setInterval(function () {
+            i += 0.5;
+            drug6.style.left = i + "%";
+        
+            if (i >= 75) {
+                clearInterval(drugimg6);
+            }
+        }, 30)
+
+        let drugimg7 = setInterval(function () {
+            i += 0.5;
+            drug7.style.left = i + "%";
+        
+            if (i >= 90) {
+                clearInterval(drugimg7);
+            }
+        }, 30)
+
+}

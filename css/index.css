@@ -12,14 +12,14 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: aqua;
     color: black;
     font-weight: 500;
 }
 
 section {
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: white;
 }
 
@@ -33,7 +33,21 @@ section {
     margin: 0 auto;
     /* border: solid 1px red; */
 }
-
+#header {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    background-color: black;
+}
+#header #nav{
+    width: 50%;
+    height: 100%;
+    float: right;
+    /* border: solid 1px red; */
+}
 #index_section {
     margin-top: 0;
     background-image: url(../img/bg01.png);
@@ -56,16 +70,11 @@ section {
     margin-top: 1%;
     /* border: solid 1px blue; */
 }
-#index_section #img_box {
+#index_section #mockup_img {
     float: right;
     width: 40%;
-    height: 80%;
     margin-top: 100px;
-    background-image: url(../img/mockup01_off.png);
-    background-size: 95% 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 #index_section #button_box {
@@ -90,6 +99,7 @@ section {
 
 #user_section {
     height: 100vh;
+    margin-top: 0;
     background-color: white;
 }
 
@@ -126,6 +136,10 @@ section {
     /* border: solid 1px blue; */
 }
 
+#user_section .text_box p{
+    line-height: 2.2rem;
+    /* border: solid 1px red; */
+}
 #user_section #user_text {
     width: 100%;
     height: auto;
@@ -138,7 +152,7 @@ section {
 }
 
 #user_section #user_text h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     flex-direction: column;
     align-items: center;
@@ -162,10 +176,12 @@ section {
     /* border: solid 1px blue; */
 }
 #video_section{
+    width: 100vw;
     height: 100vh;
-    background-image: url(../img/video_img.png);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+}
+#video_section iframe{
+    width: 100%;
+    height: 100%;
 }
 #project_section{
     height: 130vh;
@@ -173,17 +189,17 @@ section {
     background-size: 100vw 130vh;
 }
 #project_section h1{
-    font-size: 55px;
+    font-size: 48px;
     font-weight: 700;
     color: #333D4B;
 }
 #project_section p{
-    font-size: 28px;
+    font-size: 24px;
 }
 #project_section .text{
     width: 75%;
     padding: 2%;
-    margin-top: 13%;
+    margin-top: 8%;
     /* border: solid 1px blue; */
 }
 #project_section .text p{
@@ -248,17 +264,21 @@ section {
 }
 #with_section{
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-color: #FBFBF8;
 }
-#with_section h1{
-    margin: 0 auto;
-    font-size: 95px;
-    font-weight: 700;
+#with_section #with_page{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: solid 1px blue; */
+}
+#with_section h1{
+    font-size: 95px;
+    font-weight: 700;
     /* border: solid 1px blue; */
 }
 #function1_section{
@@ -270,7 +290,6 @@ section {
 }
 #function1_section img{
     width: 40%;
-    height: 40%;
     margin-top: 130px;
 }
 #function1_section .text_box{
@@ -330,11 +349,11 @@ section {
     font-size: 32px;
     color: #86B500;
 }
-#function2_section .text_box h1{
+/* #function2_section .text_box h1{
     font-size: 45px;
     font-weight: 600;
     margin-top: 40px;
-}
+} */
 #function2_section .function_box{
     width: 80%;
     height: 75%;
@@ -403,6 +422,7 @@ section {
     display: block;
     margin: 0 auto;
     margin-top: 240px;
+    /* border: solid 1px red; */
 }
 #function3_section .textbox{
     width: 100%;
@@ -446,36 +466,11 @@ section {
     margin-left: 1%;
     /* border: solid 1px fuchsia; */
 }
-/* #function3_section #drug1{
-    position: relative;
+#function3_section #drug1, #function3_section #drug2, #function3_section #drug3, #function3_section #drug4, #function3_section #drug5, #function3_section #drug6, #function3_section #drug7{
+    position: absolute;
     top: 0;
-    left: 34.5%;
+    left: 45%;
 }
-#function3_section #drug2{
-    position: relative;
-    top: 0;
-    left: 23%;
-}
-#function3_section #drug3{
-    position: relative;
-    top: 0;
-    left: 11.5%;
-}
-#function3_section #drug5{
-    position: relative;
-    top: 0;
-    left: -11.5%;
-}
-#function3_section #drug6{
-    position: relative;
-    top: 0;
-    left: -23%;
-}
-#function3_section #drug7{
-    position: relative;
-    top: 0;
-    left: -34.5%;
-} */
 #function4_section{
     width: 100vw;
     height: 150vh;
@@ -590,16 +585,31 @@ section {
     line-height: 2em;
 }
 #footer_section #copyright{
-    width: 90%;
-    height: 100px;
+    width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-top: 8vh;
     /* border: solid 1px aqua; */
 }
 #footer_section #copyright p{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
+}
+
+#top{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: lightgray;
+    border: solid 2px lightgray;
+    font-weight: 700;
+}
+button:hover{
+    cursor: pointer;
+    color: red;
 }
