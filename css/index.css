@@ -49,6 +49,8 @@ section {
     /* border: solid 1px red; */
 }
 #index_section {
+    width: 100vw;
+    height: 100vh;
     margin-top: 0;
     background-image: url(../img/bg01.png);
     background-size: 100vw 100vh;
@@ -143,7 +145,7 @@ section {
 #user_section #user_text {
     width: 100%;
     height: auto;
-    margin-top: 200px;
+    margin-top: 12%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,12 +292,12 @@ section {
 }
 #function1_section img{
     width: 40%;
-    margin-top: 130px;
+    margin-top: 10%;
 }
 #function1_section .text_box{
     width: 40%;
     height: 40%;
-    margin-top: 130px;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -612,4 +614,94 @@ section {
 button:hover{
     cursor: pointer;
     color: red;
+}
+
+@media only screen and (max-width:1280px){
+    section{
+        /* border: solid 1px red; */
+        box-sizing: border-box;
+    }
+    #index_section p{
+        font-size: 30px;
+        margin-top: 30%;
+    }
+    #index_section h1{
+        font-size: 40px;
+    }
+    #index_section #button{
+        font-size: 22px;
+    }
+    #user_section #all_user{
+        margin-top: 10%;
+    }
+    #user_section .text_box {
+        width: 80%;
+        font-size: 20px;
+        /* border: solid 1px red; */
+    }
+    #function1_section{
+        height: 200vh;
+    }
+    #function1_section img{
+        width: 35%;
+        /* border: solid 1px red; */
+    }
+    #function1_section .right_text{
+        margin-left: 0;
+    }
+    #function1_section .text_box{
+        height: 25%;
+        padding-top: 20%;
+        /* border: solid 1px red; */
+    }
+    #function1_section .text_box h1{
+        font-size: 40px;
+    }
+    #function1_section .text_box p{
+        font-size: 24px;
+    }
+    #function2_section .function_box{
+        margin-top: 20%;
+    }
+    #function2_section .function_box .section
+    {
+        width: 45%;
+        /* border: solid 1px red; */
+    }
+    #function2_section .function_box .section h1{
+        font-size: 50px;
+    }
+    #function2_section .function_box .section p{
+        font-size: 22px;
+    }
+    #function2_section .function_box .second{
+        margin-top: 10%;
+    }
+    #function3_section{
+        height: 150vh;
+    }
+    #function3_section .text{
+        width: 22%;
+        height: 10%;
+        /* border: solid 1px red; */
+    }
+    #function3_section .text p{
+        font-size: 24px;
+    }   
+    #function4_section .area{
+        width: 36%;
+        /* border: solid 1px red; */
+    }
+    #function4_section .area h1{
+        font-size: 60px;
+    }
+    #function4_section .area p{
+        font-size: 19px;
+    }
+    #footer_section #footer_box .area{
+        margin-top: 10%;
+    }
+    #footer_section #footer_box .area p{
+        font-size: 24px;
+    }
 }
