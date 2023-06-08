@@ -6,20 +6,28 @@ window.addEventListener("scroll", function () {
 
     if (scrollY > 150) {
         console.log("150 이상");
-        myHeader.style.height = 0;
-        myHeader.style.dispaly = "none";
+        myHeader.style.height = 110 + "px";
         myHeader.style.top = -100 + "px";
+        
+        myHeader.onmouseover = function(){
+            myHeader.style.height = 100 + "px";
+            myHeader.style.top = 0;
+        }
+    
+        myHeader.onmouseout = function(){
+            myHeader.style.height = 110 + "px";
+            myHeader.style.top = -100 + "px";
+        }
     }
     else {
         console.log("150 이하");
         myHeader.style.height = 100 + "px";
         myHeader.style.top = 0;
+
+        myHeader.onmouseout = null;
+        myHeader.onmouseover = null;
     }
 
-    // myHeader.onmouseover = function(){
-    //     myHeader.style.height = 100 + "px";
-    //     myHeader.style.top = 0;
-    // }
 })
 
 

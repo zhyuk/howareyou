@@ -1,8 +1,17 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+@font-face {
+    font-family: 'locus_sangsang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     background-color: rgba(250, 250, 250, 235);
     color: black;
-    font-family: 'Gothic A1', serif;
+    font-family: "Pretendard Variable";
+    font-weight: 500;
 }
 
 section {
@@ -15,12 +24,22 @@ section {
     clear: both;
 }
 
+.locus {
+    font-family: "locus_sangsang";
+    font-weight: normal;
+}
+
+.pretendard {
+    font-family: "Pretendard Variable";
+}
+
 .content {
     width: 80%;
     height: auto;
     margin: 0 auto;
-    /* border: solid 1px red; */
+    border: solid 1px red;
 }
+
 #header {
     width: 100vw;
     height: 100px;
@@ -28,14 +47,27 @@ section {
     top: 0;
     left: 0;
     transition: all 1s;
-    background-color: #fff;
+    background-color: #ffdf64;
+    /* border-bottom: solid 3px #000; */
 }
-#header #nav{
-    width: 50%;
-    height: 100%;
+
+#header #nav {
+    width: 70%;
+    height: 80px;
     float: right;
-    /* border: solid 1px red; */
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 6px 12px;
+    border: solid 1px red;
 }
+
+#header #nav li:hover {
+    color: white;
+}
+
 #index_section {
     width: 100vw;
     height: 100vh;
@@ -47,7 +79,7 @@ section {
 
 #index_section p {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 500;
     width: 10%;
     margin-top: 15%;
     /* border: solid 1px blue; */
@@ -55,12 +87,12 @@ section {
 
 #index_section h1 {
     font-size: 70px;
-    font-weight: 700;
     width: 50%;
     margin-top: 1%;
     line-height: 1.2;
     /* border: solid 1px blue; */
 }
+
 #index_section #mockup_img {
     float: right;
     width: 40%;
@@ -82,9 +114,10 @@ section {
     /* border: solid 1px green; */
 }
 
-#user_section .second{
+#user_section .second {
     margin-left: 5%;
 }
+
 #user_section .user_box {
     width: 30%;
     margin-top: 100px;
@@ -108,10 +141,11 @@ section {
     /* border: solid 1px blue; */
 }
 
-#user_section .text_box p{
+#user_section .text_box p {
     line-height: 2.2rem;
     /* border: solid 1px red; */
 }
+
 #user_section #user_text {
     width: 100%;
     height: auto;
@@ -130,13 +164,15 @@ section {
     align-items: center;
     /* border: solid 1px green; */
 }
-#advise_section{
+
+#advise_section {
     height: 100vh;
     background-image: url(../img/bg02.png);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
-#advise_section h1{
+
+#advise_section h1 {
     margin: 0 auto;
     font-size: 80px;
     font-weight: 700;
@@ -147,104 +183,138 @@ section {
     justify-content: center;
     /* border: solid 1px blue; */
 }
-#video_section{
+
+#video_section {
     width: 100vw;
     height: 100vh;
 }
-#video_section iframe{
+
+#video_section iframe {
     width: 100%;
     height: 100%;
 }
-#project_section{
+
+#project_section {
     height: 130vh;
     background-image: url(../img/bg03.png);
     background-size: 100vw 130vh;
 }
-#project_section h1{
+
+#project_section h1 {
     font-size: 48px;
     font-weight: 700;
     color: #333D4B;
 }
-#project_section p{
+
+#project_section p {
     font-size: 24px;
 }
-#project_section .text{
+
+#project_section .text {
     width: 75%;
     padding: 2%;
     margin-top: 8%;
     /* border: solid 1px blue; */
 }
-#project_section .text p{
+
+#project_section .text p {
     margin-top: 80px;
     color: #6B7684;
     line-height: 1.6em;
 }
-#project_section #text_right{
+
+#project_section #text_right {
     float: right;
     text-align: right;
     margin-right: 3%;
 }
-#design_section{
+
+#design_section {
     height: 100vh;
     background-image: url(../img/mockup02.png);
     background-repeat: no-repeat;
-    background-size: 60vw ;
+    background-size: 60vw;
     background-position: 100%;
 }
-#design_section p{
+
+#design_section p {
     margin-top: 15%;
     font-size: 32px;
     font-weight: 600;
     color: #86B500;
 }
-#design_section h1{
+
+#design_section h1 {
     font-size: 45px;
     font-weight: 600;
     color: #333D4B;
     margin-top: 40px;
     line-height: 1.5;
 }
-#logo_section{
+
+#logo_section {
     width: 100vw;
     height: 100vh;
     background-color: #fff;
 }
-#logo_section h2{
+
+#logo_section h2 {
     margin-top: 15%;
     font-size: 32px;
     font-weight: 600;
     color: #86B500;
 }
-#logo_section h1{
+
+#logo_section h1 {
     font-size: 45px;
     font-weight: 600;
     color: #333D4B;
     margin-top: 40px;
 }
-#logo_section p{
+
+#logo_section p {
     font-size: 30px;
     color: #6B7684;
     margin-top: 40px;
     line-height: 1.3;
 }
-#logo_section .img{
+
+#logo_section .logo_box {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* border: solid 1px blue; */
+    height: 40%;
+    margin-top: 5%;
+    border: solid 1px blue;
 }
-#logo_section img{
-    margin-top: 100px;
-    /* border: solid 1px green; */
+
+#logo_section .logo_box .text_box {
+    width: 45%;
+    height: 80%;
+    float: left;
+    border: solid 1px red;
 }
-#with_section{
+
+#logo_section .logo_box .text_box #text_area {
+    width: 100%;
+    height: 20%;
+    border: solid 1px blue;
+}
+
+#logo_section .logo_box .text_box img {
+    width: 30%;
+}
+
+#logo_section .logo_box .right {
+    float: right;
+}
+
+#with_section {
     width: 100vw;
     height: 50vh;
     margin-top: 0;
     background-color: #fff;
 }
-#with_section #with_page{
+
+#with_section #with_page {
     width: 100%;
     height: 100%;
     display: flex;
@@ -253,23 +323,27 @@ section {
     justify-content: center;
     /* border: solid 1px blue; */
 }
-#with_section h1{
+
+#with_section h1 {
     font-size: 95px;
     font-weight: 700;
     /* border: solid 1px blue; */
 }
-#function1_section{
+
+#function1_section {
     width: 100vw;
     height: 300vh;
     background-image: url(../img/bg04.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
-#function1_section img{
+
+#function1_section img {
     width: 40%;
     margin-top: 10%;
 }
-#function1_section .text_box{
+
+#function1_section .text_box {
     width: 40%;
     height: 40%;
     margin-top: 10%;
@@ -278,19 +352,22 @@ section {
     justify-content: center;
     /* border: solid 1px green; */
 }
-#function1_section .text_box h2{
+
+#function1_section .text_box h2 {
     font-size: 32px;
     font-weight: 600;
     color: #86B500;
 }
-#function1_section .text_box h1{
+
+#function1_section .text_box h1 {
     font-size: 50px;
     font-weight: 600;
     color: #333D4B;
     margin-top: 40px;
     line-height: 1.2em;
 }
-#function1_section .text_box p{
+
+#function1_section .text_box p {
     width: 80%;
     font-size: 28px;
     color: #6B7684;
@@ -298,85 +375,103 @@ section {
     line-height: 1.5em;
     /* border: solid 1px blue; */
 }
-#function1_section .text{
+
+#function1_section .text {
     width: 100%;
     height: auto;
     /* border: solid 1px green; */
 }
-#function1_section .left{
+
+#function1_section .left {
     float: left;
 }
-#function1_section .left_box{
+
+#function1_section .left_box {
     float: left;
     margin-left: 10%;
 }
-#function1_section .right{
+
+#function1_section .right {
     float: right;
     margin-right: 10%;
 }
-#function1_section .right_text{
+
+#function1_section .right_text {
     padding-left: 3%;
 }
-#function2_section{
+
+#function2_section {
     width: 100vw;
     height: 200vh;
     background-color: #fff;
 }
-#function2_section .text_box{
+
+#function2_section .text_box {
     /* border: solid 1px green; */
     margin-top: 100px;
 }
-#function2_section .text_box p{
+
+#function2_section .text_box p {
     font-size: 32px;
+    font-weight: 600;
     color: #86B500;
 }
+
 /* #function2_section .text_box h1{
     font-size: 45px;
     font-weight: 600;
     margin-top: 40px;
 } */
-#function2_section .function_box{
+#function2_section .function_box {
     width: 80%;
     height: 75%;
     margin: 0 auto;
     margin-top: 100px;
     /* border: solid 1px aqua; */
 }
-#function2_section .function_box .section{
-    width: 40%;
+
+#function2_section .function_box .section {
+    width: 45%;
     height: 25%;
     padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: solid 1px blue; */
+    border: solid 1px blue;
 }
-#function2_section .function_box .second{
+
+#function2_section .function_box .second {
     margin-top: 150px;
 }
-#function2_section .function_box .section img{
+
+#function2_section .function_box .section img {
     width: 95%;
     height: auto;
     /* border: solid 1px red; */
 }
-#function2_section .function_box .section h1{
+
+#function2_section .function_box .section h1 {
     font-size: 70px;
     font-weight: 700;
     color: #333D4B;
 }
-#function2_section .function_box .section p{
+
+#function2_section .function_box .section p {
     font-size: 25px;
     color: #6B7684;
     margin-top: 30px;
     line-height: 1.5em;
 }
-#function2_section .function_box .left{
+
+#function2_section .function_box .left {
     float: left;
 }
-#function2_section .function_box .right{
+
+#function2_section .function_box .right {
     float: right;
 }
-#function3_section{
+
+#function3_section {
     width: 100vw;
     height: 200vh;
     background-color: #fff;
@@ -385,91 +480,117 @@ section {
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-#function3_section .text_box{
+
+#function3_section .text_box {
     /* border: solid 1px green; */
     margin-top: 100px;
 }
-#function3_section .text_box p{
+
+#function3_section .text_box p {
     font-size: 32px;
+    font-weight: 600;
     color: #86B500;
 }
-#function3_section .text_box h1{
+
+#function3_section .text_box h1 {
     font-size: 45px;
     font-weight: 600;
     margin-top: 40px;
 }
-#function3_section .mockup{
+
+#function3_section .mockup {
     width: 40%;
     display: block;
     margin: 0 auto;
     margin-top: 240px;
     border: solid 1px red;
 }
-#function3_section .textbox{
+
+#function3_section .textbox {
     width: 100%;
     height: 85%;
     border: solid 1px blue;
 }
-#function3_section .text{
+
+#function3_section .text {
     width: 20%;
     height: 20%;
-    padding: 1%;
-    margin-top: 30%;
+    padding: 0.5%;
+    margin-top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     top: -15%;
-    /* border: solid 1px green; */
+    border: solid 1px green;
 }
-#function3_section .text p{
-    font-size: 30px;
+
+#function3_section .text p {
+    font-size: 28px;
     color: #6B7684;
 }
-#function3_section .left{
+
+#function3_section .left {
     float: left;
     margin-left: 5%;
 }
-#function3_section .right{
+
+#function3_section .right {
     float: right;
     margin-right: 5%;
 }
-#function3_section .drug_area{
+
+#function3_section .drug_area {
     width: 100%;
     box-sizing: border-box;
     position: relative;
     top: -26.5%;
     border: solid 1px blue;
 }
-#function3_section .drug{
+
+#function3_section .drug {
     width: 10%;
     border: solid 1px fuchsia;
 }
-#function3_section #drug1, #function3_section #drug2, #function3_section #drug3, #function3_section #drug4, #function3_section #drug5, #function3_section #drug6, #function3_section #drug7{
+
+#function3_section #drug1,
+#function3_section #drug2,
+#function3_section #drug3,
+#function3_section #drug4,
+#function3_section #drug5,
+#function3_section #drug6,
+#function3_section #drug7 {
     position: absolute;
     top: 0;
     left: 44%;
 }
-#function3_section #drug1{
+
+#function3_section #drug1 {
     left: 8%;
 }
-#function3_section #drug2{
+
+#function3_section #drug2 {
     left: 20%;
 }
-#function3_section #drug3{
+
+#function3_section #drug3 {
     left: 32%;
 }
-#function3_section #drug5{
+
+#function3_section #drug5 {
     left: 56%;
 }
-#function3_section #drug6{
+
+#function3_section #drug6 {
     left: 68%;
 }
-#function3_section #drug7{
+
+#function3_section #drug7 {
     left: 80%;
 }
-#function4_section{
+
+#function4_section {
     width: 100vw;
     height: 150vh;
     background-color: #fff;
@@ -478,122 +599,149 @@ section {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-#function4_section #text_box{
+
+#function4_section #text_box {
     /* border: solid 1px green; */
     margin-top: 100px;
 }
-#function4_section #text_box p{
+
+#function4_section #text_box p {
     font-size: 32px;
+    font-weight: 600;
     color: #86B500;
 }
-#function4_section #text_box h1{
+
+#function4_section #text_box h1 {
     font-size: 45px;
     font-weight: 600;
     margin-top: 40px;
 }
-#function4_section #function_area{
+
+#function4_section #function_area {
     width: 100%;
     height: 80%;
     margin-top: 100px;
     /* border: solid 1px aqua; */
 }
-#function4_section .area{
+
+#function4_section .area {
     width: 35%;
     height: 35%;
     padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: solid 1px blue; */
+    border: solid 1px blue;
 }
-#function4_section .left{
+
+#function4_section .left {
     float: left;
     margin-left: 10%;
 }
-#function4_section .right{
+
+#function4_section .right {
     float: right;
     margin-right: 10%;
 }
-#function4_section .second{
+
+#function4_section .second {
     margin-top: 150px;
-}#function4_section .area h1{
+}
+
+#function4_section .area h1 {
     font-size: 70px;
     font-weight: 700;
     color: #333D4B;
 }
-#function4_section .area p{
-    font-size: 25px;
+
+#function4_section .area p {
+    font-size: 22px;
     color: #6B7684;
     margin-top: 30px;
     line-height: 1.5em;
 }
 
-#service_section{
+#service_section {
     width: 100vw;
     height: 50vh;
     background-color: black;
     color: #FFC800;
 }
-#service_section h1{
+
+#service_section h1 {
     margin: 0 auto;
     font-size: 70px;
     font-weight: 900;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    line-height: 1.25;
     /* border: solid 1px red; */
 }
-#footer_section{
+
+#footer_section {
     margin-top: 0;
     width: 100vw;
     height: 50vh;
     background-color: #FFC800;
     color: black;
 }
-#footer_section #footer_box{
+
+#footer_section #footer_box {
     width: 90%;
     height: 60%;
     margin: 0 auto;
     margin-top: 5%;
     /* border: solid 1px blue; */
 }
-#footer_section #footer_box #text_box{
+
+#footer_section #footer_box #text_box {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-top: 10%;
     /* border: solid 1px red; */
 }
-#footer_section #footer_box .area{
+
+#footer_section #footer_box .area {
     width: 30%;
     height: 80%;
-    margin-top: 3%;
     display: inline-block;
     padding-left: 1%;
     text-align: center;
-    /* border-left: solid 3px black; */
     /* border: solid 1px aqua; */
 }
-#footer_section #footer_box .second{
+
+#footer_section #footer_box .second {
     margin-left: 2%;
 }
-#footer_section #footer_box .area p{
+
+#footer_section #footer_box .area img {
+    width: 30%;
+    margin-bottom: 4%;
+    /* border: solid 1px red; */
+}
+
+#footer_section #footer_box .area p {
     font-size: 22px;
     font-weight: 600;
     line-height: 2em;
 }
-#footer_section #copyright{
+
+#footer_section #copyright {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 6%;
     /* border: solid 1px aqua; */
 }
-#footer_section #copyright p{
+
+#footer_section #copyright p {
     font-size: 18px;
     font-weight: 600;
 }
 
-#top{
+#top {
     width: 60px;
     height: 60px;
     position: fixed;
@@ -606,97 +754,144 @@ section {
     border: solid 1px #ffdf64;
     font-weight: 700;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     color: #fff;
 }
 
-@media only screen and (max-width:1280px){
-    section{
+/* Table ver. */
+@media only screen and (max-width:1280px) {
+    section {
         /* border: solid 1px red; */
         box-sizing: border-box;
     }
-    #index_section p{
+
+    #index_section p {
         font-size: 30px;
         margin-top: 30%;
     }
-    #index_section h1{
+
+    #index_section h1 {
         font-size: 40px;
     }
-    #index_section #button{
+
+    #index_section #button {
         font-size: 22px;
     }
-    #user_section #all_user{
+
+    #user_section #all_user {
         margin-top: 10%;
     }
+
     #user_section .text_box {
         width: 80%;
         font-size: 20px;
         /* border: solid 1px red; */
     }
-    #function1_section{
+
+    #function1_section {
         height: 200vh;
     }
-    #function1_section img{
+
+    #function1_section img {
         width: 35%;
         /* border: solid 1px red; */
     }
-    #function1_section .right_text{
+
+    #function1_section .right_text {
         margin-left: 0;
     }
-    #function1_section .text_box{
+
+    #function1_section .text_box {
         height: 25%;
         padding-top: 20%;
         /* border: solid 1px red; */
     }
-    #function1_section .text_box h1{
+
+    #function1_section .text_box h1 {
         font-size: 40px;
     }
-    #function1_section .text_box p{
+
+    #function1_section .text_box p {
         font-size: 24px;
     }
-    #function2_section .function_box{
+
+    #function2_section .function_box {
         margin-top: 20%;
     }
-    #function2_section .function_box .section
-    {
+
+    #function2_section .function_box .section {
         width: 45%;
         /* border: solid 1px red; */
     }
-    #function2_section .function_box .section h1{
+
+    #function2_section .function_box .section h1 {
         font-size: 50px;
     }
-    #function2_section .function_box .section p{
+
+    #function2_section .function_box .section p {
         font-size: 22px;
     }
-    #function2_section .function_box .second{
+
+    #function2_section .function_box .second {
         margin-top: 10%;
     }
-    #function3_section{
+
+    #function3_section {
         height: 150vh;
     }
-    #function3_section .text{
+
+    #function3_section .text {
         width: 22%;
         height: 10%;
         /* border: solid 1px red; */
     }
-    #function3_section .text p{
+
+    #function3_section .text p {
         font-size: 24px;
-    }   
-    #function4_section .area{
+    }
+
+    #function4_section .area {
         width: 36%;
         /* border: solid 1px red; */
     }
-    #function4_section .area h1{
+
+    #function4_section .area h1 {
         font-size: 60px;
     }
-    #function4_section .area p{
+
+    #function4_section .area p {
         font-size: 19px;
     }
-    #footer_section #footer_box .area{
+
+    #footer_section #footer_box .area {
         margin-top: 10%;
     }
-    #footer_section #footer_box .area p{
+
+    #footer_section #footer_box .area p {
         font-size: 24px;
+    }
+}
+
+/* 모바일 버전 */
+@media only screen and (max-width:720px) {
+    #header #nav {
+        width: 100%;
+    }
+
+    #index_section p {
+        font-size: 30px;
+        width: 20%;
+        border: solid 1px red;
+    }
+
+    #index_section h1 {
+        width: 80%;
+        border: solid 1px red;
+    }
+
+    #index_section #mockup_img {
+        width: 30%;
     }
 }
