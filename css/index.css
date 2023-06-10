@@ -241,16 +241,95 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 #logo_section .logo_box .logos:last-child {
     width: 50%;
     float: right;
+    /* border: solid 1px lime; */
 }
-#with_section {
-    height: 50vh;
-    margin-top: 0;
-    background-color: #fff;
+
+#logo_section .logo_box .logos {
+    display: flex;
+    margin-top: 10%;
+}
+
+
+#logo_section .logo_box .logos .text {
+    width: 100%;
+    /* border: solid 1px lightblue; */
+}
+
+#logo_section .logo_box .logos li {
+    width: 40%;
+    float: left;
+}
+
+#logo_section .logo_box .logos li:last-child {
+    margin-left: 3%;
+}
+
+#logo_section .logo_box .logos h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #6B7684;
+    /* border: solid 1px blue; */
+}
+
+#logo_section .logo_box .logos img {
+    width: 40%;
+    margin-top: 5%;
+    float: left;
+    /* border: solid 1px red; */
+}
+
+#logo_section .logo_box .logos p {
+    color: #FFC700;
+    font-size: 3.875rem;
+    font-weight: 900;
+    float: left;
+    /* border: solid 1px yellow; */
+}
+#logo_section .logo_box .logos:last-child li {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid 1px blue; */
+}
+#logo_section .logo_box .logos:last-child .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#logo_section .logo_box .logos:last-child li:first-child,#logo_section .logo_box .logos:last-child li:nth-child(2),
+#logo_section .logo_box .logos:last-child li:nth-child(3) {
+    margin-left: 5%;
+}
+#logo_section .logo_box .logos:last-child li:first-child .circle {
+    background-color: #FF7B00;
+}
+
+#logo_section .logo_box .logos:last-child li:nth-child(2) .circle {
+    background-color: #FFC700;
+    opacity: 0.6;
+}
+
+#logo_section .logo_box .logos:last-child li:nth-child(3) .circle {
+    background-color: #FFC700;
+}
+
+#logo_section .logo_box .logos:last-child p {
+    font-size: 1.5rem;
+    color: #6B7684;
+    font-weight: 500;
+    margin-top: 8%;
 }
 #logo_section .logo_box .logos .logo_text{
     width: 30%;
     display: inline;
     /* border: solid 1px teal; */
+}
+
+#with_section {
+    height: 50vh;
+    background-color: #fff;
 }
 
 #with_section #with_page {
@@ -461,6 +540,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 
 #function3_section .text p {
     font-size: 1.75rem;
+    line-height: 1.3;
     color: #6B7684;
 }
 
@@ -643,7 +723,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 }
 
 #footer_section #footer_box .area img {
-    width: 30%;
+    width: 50%;
     margin-bottom: 4%;
     /* border: solid 1px red; */
 }
