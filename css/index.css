@@ -1,93 +1,54 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
 
-@font-face {
-    font-family: 'locus_sangsang';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face {font-family: 'locus_sangsang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff'); font-weight: normal; font-style: normal;
 }
+* {box-sizing: border-box;}
+body {background-color: rgba(250, 250, 250, 235); font-family: "Pretendard Variable"; font-weight: 500;}
+section {display: flex; margin-top: 50px; background-color: #fff; width: 100%; height: 100vh;}
+header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1s; position: fixed; top: 0; left: 0;}
 
-body {
-    background-color: rgba(250, 250, 250, 235);
-    color: black;
-    font-family: "Pretendard Variable";
-    font-weight: 500;
-}
+#wrap {width: 100%; max-width: 1920px;}
+.content {width: 80%; margin: 0 auto;}
+.locus {font-family: "locus_sangsang"; font-weight: normal;}
+.clear {clear: both;}
 
-section {
-    display: flex;
-    margin-top: 50px;
-    background-color: white;
-}
-
-.clear {
-    clear: both;
-}
-
-.locus {
-    font-family: "locus_sangsang";
-    font-weight: normal;
-}
-
-.pretendard {
-    font-family: "Pretendard Variable";
-}
-
-.content {
+#header #site_nav {
     width: 80%;
-    height: auto;
-    margin: 0 auto;
-    border: solid 1px red;
-}
-
-#header {
-    width: 100vw;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all 1s;
-    background-color: #ffdf64;
-    /* border-bottom: solid 3px #000; */
-}
-
-#header #nav {
-    width: 70%;
     height: 80px;
     float: right;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
-    padding: 6px 12px;
-    border: solid 1px red;
+    padding: 8px;
+    /* border: solid 1px red; */
 }
 
-#header #nav li:hover {
+#header #site_nav li:hover {
     color: white;
+    cursor: pointer;
 }
 
 #index_section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin-top: 0;
     background-image: url(../img/bg01.png);
-    background-size: 100vw 100vh;
+    background-size: 100%;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
 #index_section p {
-    font-size: 40px;
-    font-weight: 500;
-    width: 10%;
+    font-size: 2.5rem;
+    font-weight: 500;;
     margin-top: 15%;
     /* border: solid 1px blue; */
 }
 
 #index_section h1 {
-    font-size: 70px;
-    width: 50%;
+    font-size: 4.375rem;
     margin-top: 1%;
     line-height: 1.2;
     /* border: solid 1px blue; */
@@ -96,15 +57,13 @@ section {
 #index_section #mockup_img {
     float: right;
     width: 40%;
-    margin-top: 100px;
+    margin-top: 3%;
     /* border: solid 1px red; */
 }
 
 
 #user_section {
-    height: 100vh;
     margin-top: 0;
-    background-color: white;
 }
 
 #user_section #all_user {
@@ -134,7 +93,7 @@ section {
 
 #user_section .text_box {
     width: 90%;
-    font-size: 26px;
+    font-size: 1.625rem;
     margin: 0 auto;
     margin-top: 5%;
     text-align: center;
@@ -158,25 +117,23 @@ section {
 }
 
 #user_section #user_text h1 {
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 3.75rem;
     flex-direction: column;
     align-items: center;
     /* border: solid 1px green; */
 }
 
 #advise_section {
-    height: 100vh;
     background-image: url(../img/bg02.png);
-    background-size: 100vw 100vh;
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 #advise_section h1 {
     margin: 0 auto;
-    font-size: 80px;
-    font-weight: 700;
-    color: white;
+    font-size: 5rem;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,30 +141,27 @@ section {
     /* border: solid 1px blue; */
 }
 
-#video_section {
-    width: 100vw;
-    height: 100vh;
-}
-
 #video_section iframe {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 #project_section {
     height: 130vh;
-    background-image: url(../img/bg03.png);
-    background-size: 100vw 130vh;
+    margin-top: 0;
+    background-image: url(../img/bg_img01.png),url(../img/bg_img02.png),url(../img/bg_img03.png);
+    background-size: 45%,35%,40%;
+    background-repeat: no-repeat;
+    background-position: -5% -10%,38% 40%,100% 100%;
 }
 
 #project_section h1 {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 3rem;
     color: #333D4B;
 }
 
 #project_section p {
-    font-size: 24px;
+    font-size: 1.5rem
 }
 
 #project_section .text {
@@ -220,7 +174,7 @@ section {
 #project_section .text p {
     margin-top: 80px;
     color: #6B7684;
-    line-height: 1.6em;
+    line-height: 1.6;
 }
 
 #project_section #text_right {
@@ -233,47 +187,43 @@ section {
     height: 100vh;
     background-image: url(../img/mockup02.png);
     background-repeat: no-repeat;
-    background-size: 60vw;
-    background-position: 100%;
+    background-size: 60%;
+    background-position-x: 100%;
 }
 
 #design_section p {
     margin-top: 15%;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     color: #86B500;
 }
 
 #design_section h1 {
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 2.875rem;
     color: #333D4B;
     margin-top: 40px;
     line-height: 1.5;
 }
 
 #logo_section {
-    width: 100vw;
     height: 100vh;
-    background-color: #fff;
 }
 
 #logo_section h2 {
     margin-top: 15%;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     color: #86B500;
 }
 
 #logo_section h1 {
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 3.375rem;
     color: #333D4B;
     margin-top: 40px;
 }
 
 #logo_section p {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #6B7684;
     margin-top: 40px;
     line-height: 1.3;
@@ -281,37 +231,26 @@ section {
 
 #logo_section .logo_box {
     width: 100%;
-    height: 40%;
-    margin-top: 5%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
-
-#logo_section .logo_box .text_box {
-    width: 45%;
-    height: 80%;
+#logo_section .logo_box .logos:first-child {
+    width: 50%;
     float: left;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
-
-#logo_section .logo_box .text_box #text_area {
-    width: 100%;
-    height: 20%;
-    border: solid 1px blue;
-}
-
-#logo_section .logo_box .text_box img {
-    width: 30%;
-}
-
-#logo_section .logo_box .right {
+#logo_section .logo_box .logos:last-child {
+    width: 50%;
     float: right;
 }
-
 #with_section {
-    width: 100vw;
     height: 50vh;
     margin-top: 0;
     background-color: #fff;
+}
+#logo_section .logo_box .logos .logo_text{
+    width: 30%;
+    display: inline;
+    /* border: solid 1px teal; */
 }
 
 #with_section #with_page {
@@ -326,15 +265,14 @@ section {
 
 #with_section h1 {
     font-size: 95px;
-    font-weight: 700;
     /* border: solid 1px blue; */
 }
 
 #function1_section {
-    width: 100vw;
     height: 300vh;
-    background-image: url(../img/bg04.png);
-    background-size: 100%;
+    background-image: url(../img/bg04.png),url(../img/bg04.png);
+    background-size: 40%,40%;
+    background-position: center 25%, center 80%;
     background-repeat: no-repeat;
 }
 
@@ -342,6 +280,7 @@ section {
     width: 40%;
     margin-top: 10%;
 }
+
 
 #function1_section .text_box {
     width: 40%;
@@ -354,25 +293,24 @@ section {
 }
 
 #function1_section .text_box h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     color: #86B500;
 }
 
 #function1_section .text_box h1 {
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 3.125rem;
     color: #333D4B;
     margin-top: 40px;
-    line-height: 1.2em;
+    line-height: 1.2;
 }
 
 #function1_section .text_box p {
     width: 80%;
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #6B7684;
     margin-top: 30px;
-    line-height: 1.5em;
+    line-height: 1.5;
     /* border: solid 1px blue; */
 }
 
@@ -401,9 +339,7 @@ section {
 }
 
 #function2_section {
-    width: 100vw;
     height: 200vh;
-    background-color: #fff;
 }
 
 #function2_section .text_box {
@@ -412,7 +348,7 @@ section {
 }
 
 #function2_section .text_box p {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     color: #86B500;
 }
@@ -437,7 +373,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 #function2_section .function_box .second {
@@ -451,16 +387,15 @@ section {
 }
 
 #function2_section .function_box .section h1 {
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 4.375rem;
     color: #333D4B;
 }
 
 #function2_section .function_box .section p {
-    font-size: 25px;
+    font-size: 1.625rem;
     color: #6B7684;
     margin-top: 30px;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 #function2_section .function_box .left {
@@ -472,12 +407,11 @@ section {
 }
 
 #function3_section {
-    width: 100vw;
     height: 200vh;
     background-color: #fff;
     background-image: url(../img/bg05.png);
-    background-size: 50%;
-    background-position: 50% 50%;
+    background-size: 80%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -487,14 +421,13 @@ section {
 }
 
 #function3_section .text_box p {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     color: #86B500;
 }
 
 #function3_section .text_box h1 {
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 2.875rem;
     margin-top: 40px;
 }
 
@@ -503,13 +436,13 @@ section {
     display: block;
     margin: 0 auto;
     margin-top: 240px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 #function3_section .textbox {
     width: 100%;
     height: 85%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 #function3_section .text {
@@ -523,11 +456,11 @@ section {
     justify-content: center;
     position: relative;
     top: -15%;
-    border: solid 1px green;
+    /* border: solid 1px green; */
 }
 
 #function3_section .text p {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #6B7684;
 }
 
@@ -543,15 +476,14 @@ section {
 
 #function3_section .drug_area {
     width: 100%;
-    box-sizing: border-box;
     position: relative;
     top: -26.5%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 #function3_section .drug {
     width: 10%;
-    border: solid 1px fuchsia;
+    /* border: solid 1px fuchsia; */
 }
 
 #function3_section #drug1,
@@ -591,13 +523,11 @@ section {
 }
 
 #function4_section {
-    width: 100vw;
     height: 150vh;
-    background-color: #fff;
     background-image: url(../img/bg05.png);
-    background-size: 60%;
+    background-size: 80%;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 #function4_section #text_box {
@@ -606,14 +536,13 @@ section {
 }
 
 #function4_section #text_box p {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     color: #86B500;
 }
 
 #function4_section #text_box h1 {
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 2.875rem;
     margin-top: 40px;
 }
 
@@ -631,7 +560,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 #function4_section .left {
@@ -650,19 +579,17 @@ section {
 
 #function4_section .area h1 {
     font-size: 70px;
-    font-weight: 700;
     color: #333D4B;
 }
 
 #function4_section .area p {
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #6B7684;
     margin-top: 30px;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 #service_section {
-    width: 100vw;
     height: 50vh;
     background-color: black;
     color: #FFC800;
@@ -670,7 +597,7 @@ section {
 
 #service_section h1 {
     margin: 0 auto;
-    font-size: 70px;
+    font-size: 4.375rem;
     font-weight: 900;
     display: flex;
     align-items: center;
@@ -682,7 +609,6 @@ section {
 
 #footer_section {
     margin-top: 0;
-    width: 100vw;
     height: 50vh;
     background-color: #FFC800;
     color: black;
@@ -723,9 +649,9 @@ section {
 }
 
 #footer_section #footer_box .area p {
-    font-size: 22px;
+    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 2em;
+    line-height: 2;
 }
 
 #footer_section #copyright {
@@ -737,7 +663,7 @@ section {
 }
 
 #footer_section #copyright p {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -748,7 +674,7 @@ section {
     bottom: 50px;
     right: 50px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 30px;
     background-color: #ffdf64;
     border: solid 1px #ffdf64;

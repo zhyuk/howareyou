@@ -8,13 +8,13 @@ window.addEventListener("scroll", function () {
         console.log("150 이상");
         myHeader.style.height = 110 + "px";
         myHeader.style.top = -100 + "px";
-        
-        myHeader.onmouseover = function(){
+
+        myHeader.onmouseover = function () {
             myHeader.style.height = 100 + "px";
             myHeader.style.top = 0;
         }
-    
-        myHeader.onmouseout = function(){
+
+        myHeader.onmouseout = function () {
             myHeader.style.height = 110 + "px";
             myHeader.style.top = -100 + "px";
         }
@@ -51,12 +51,18 @@ let isDrugExecuted = false;
 window.addEventListener("scroll", function () {
     console.log(scrollY);
 
+    let mockup = document.querySelector(".mockup");
+    let intersectionObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting && !isDrugExecuted) {
+                // 요소가 보여질 때 실행할 JavaScript 코드 작성
+                drug()
+                isDrugExecuted = true;
+            }
+        });
+    });
+    intersectionObserver.observe(mockup);
 
-    if (!isDrugExecuted) {
-        console.log("약기능 실행");
-        drug()
-        isDrugExecuted = true;
-    }
 })
 
 function drug() {
@@ -125,3 +131,54 @@ function drug() {
     }, 30)
 
 }
+
+// 네비 클릭 시 이동하는 코드
+let menu1 = document.querySelector("#nav1");
+let menu2 = document.querySelector("#nav2");
+let menu3 = document.querySelector("#nav3");
+let menu4 = document.querySelector("#nav4");
+
+let GoalSection = document.querySelector("#project_section");
+let GoalSectionOffsetTop = GoalSection.offsetTop;
+let DesignSection = document.querySelector("#design_section"); 
+let DesignSectionOffsetTop = DesignSection.offsetTop;
+let FunctionSection = document.querySelector("#function1_section");
+let FunctionSectionOffsetTop = FunctionSection.offsetTop;
+let ContactSection = document.querySelector("#footer_section"); 
+let ContactSectionOffsetTop = ContactSection.offsetTop;
+
+function ScrollGoalSection(){
+    window.scrollTo({
+        top : GoalSectionOffsetTop,
+        behavior : "smooth"
+    });
+}
+
+function ScrollDesignSection(){
+    window.scrollTo({
+        top : DesignSectionOffsetTop,
+        behavior : "smooth"
+    });
+}
+
+function ScrollFunctionSection(){
+    window.scrollTo({
+        top : FunctionSectionOffsetTop,
+        behavior : "smooth"
+    });
+}
+
+function ScrollContactSection(){
+    window.scrollTo({
+        top : ContactSectionOffsetTop,
+        behavior : "smooth"
+    });
+}
+
+menu1.addEventListener("click", ScrollGoalSection);
+menu2.addEventListener("click", ScrollDesignSection);
+menu3.addEventListener("click", ScrollFunctionSection);
+menu4.addEventListener("click", ScrollContactSection);
+
+
+// fucntion1_section 스크롤 시 스르륵 등장
