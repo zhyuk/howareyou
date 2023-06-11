@@ -251,7 +251,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 
 #logo_section .logo_box .logos {
     display: flex;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 
@@ -263,7 +263,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 #logo_section .logo_box .logos li {
     width: 40%;
     float: left;
-    /* border: solid 1px red; */
+    border: solid 1px red;
 }
 
 #logo_section .logo_box .logos li:last-child {
@@ -286,7 +286,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 
 #logo_section .logo_box .logos p {
     color: #FFC700;
-    font-size: 3.875rem;
+    font-size: 3.5rem;
     font-weight: 900;
     float: left;
     /* border: solid 1px yellow; */
