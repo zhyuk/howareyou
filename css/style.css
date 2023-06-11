@@ -1,0 +1,267 @@
+/* === font === */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@font-face {font-family: 'locus_sangsang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff'); font-weight: normal; font-style: normal;
+}
+
+/* === common === */
+html {scroll-behavior: smooth; font-size: 16px; box-sizing: border-box;}
+body {box-sizing: border-box; font-family: "Pretendard Variable"; font-weight: 500; background-color: rgba(250, 250, 250, 235);}
+html,body {width: 100%; height: 100%;}
+header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1s; position: fixed; top: 0; left: 0;}
+section {width: 100%; height: 100vh; background-color: #fff; margin-top:50px; display: flex;}
+footer {width: 100%; height: 80vh; display: flex;}
+
+/* === public === */
+#wrap {width: 100%; max-width: 1920px ; height: 100%;}
+.clear {clear: both;}
+.content {width: 83.33%; height: 100vh; margin: 0 auto;}
+.locus {font-family: "locus_sangsang"; font-weight: normal;}
+#top { width: 60px; height: 60px; position: fixed; bottom: 50px; right: 50px; text-align: center; font-size: 1rem;
+border-radius: 30px; background-color: #ffdf64; border: solid 1px #ffdf64; font-weight: 700;}
+button:hover {cursor: pointer; color: #fff;}
+
+/* === header === */
+header .content {height: 60px;}
+.site_nav {display: flex; align-items: center; float: right;}
+.site_nav_menu {display: flex; font-size: 2rem;}
+.site_nav_menu li {padding: 10px;}
+.site_nav_menu li:hover {color: #fff; cursor: pointer;}
+
+/* === index === */
+#index {margin-top: 0; background-image: url(../img/bg01.png); background-size: 100%; background-position: bottom; background-color: #FFDF64; background-repeat: no-repeat;}
+#index p {font-size: 2.5rem; margin-top: 15%; display: inline-block;}
+#index h1 {font-size: 4.375rem; margin-top: 1%; line-height: 1.2; display: inline-block;}
+#index .mockup {width: 35%; float: right; margin-top: 8%;}
+
+/* === user === */
+#user {margin-top: 0;}
+#user .all_box {width: 100%; display: flex; align-items: center; justify-content: space-between;}
+#user .all_box li {width: 30%; }
+#user .all_box li img {width: 100%;}
+#user .all_box .title {width: 80%; margin: 0 auto; text-align: center; margin-top: 4%; font-size: 1.625rem; line-height: 2.2;}
+#user .text_box {width: 100%; display: flex; align-items: center; justify-content: center; margin: 10% 0;}
+#user .text_box h1 {font-size: 3.75rem;}
+
+/* === advice === */
+#advice {background-image: url(../img/bg02.png); background-size: 100%; background-position: top center; background-repeat: no-repeat; display: flex; align-items: center; justify-content: center;}
+#advice h1 {font-size: 5rem; color: #fff;}
+
+/* === video === */
+#video iframe {width: 100%; height: 100%;}
+
+/* === project === */
+#project {background-image: url(../img/bg_img01.png),url(../img/bg_img02.png),url(../img/bg_img03.png); background-size: 45%,28%,30%; background-repeat: no-repeat; background-position-x: 0%, 44%, 100%; background-position-y: 0, 48%, 100%;}
+#project .text_box {width: 90%; height: 30vh; margin-top: 10%;}
+#project .text_box:last-child {margin-top: 5%; float: right; text-align: right;}
+#project .text_box h1 {font-size: 3rem; color: #333D4B;}
+#project .text_box p {font-size: 1.5rem; margin-top: 5%;     color: #6B7684; line-height: 1.6;}
+
+/* === design === */
+#design {background-image: url(../img/mockup02.png); background-size: 60% 100%; background-repeat: no-repeat; background-position: 100%;}
+#design h1 {font-size: 2rem; font-weight: 600; color: #86B500; margin-top: 15%;}
+#design p {font-size: 2.875rem; color: #333D4B; margin-top: 5%; line-height: 1.5;}
+
+/* === logo === */
+#logo h1 {font-size: 2rem; font-weight: 600; color: #86B500; margin-top: 15%;}
+#logo p {font-size: 3.375rem; color: #333D4B; margin-top: 5%;}
+#logo p.info_text {font-size: 1.875rem; color: #6B7684; line-height: 1.3; margin-top: 1%;}
+#logo .ul-container {width: 100%; display: flex; justify-content: space-between; margin-top: 5%;}
+#logo .logo_info {width: 49%; display: flex; justify-content: space-between;}
+#logo .logo_info li {width: 50%; float: left; }
+#logo .logo_info li img {width: 30%; float: left;}
+#logo .logo_info h1 {width: 100%;}
+#logo .logo_info li h1 {font-size: 1.5rem; color: #6B7684;}
+#logo .logo_info h1.logo_text {width: 50%; color: #FFC700; font-size: 3.5rem; font-weight: 900; float: left; margin-left: 5%; position: relative; top: -10%;}
+#logo .color_info {width: 49%; float: right; display: flex; justify-content: space-between;}
+#logo .color_info li {width: 30%; text-align: center;}
+#logo .color_info .circle {width: 100px; height: 100px; border-radius: 50%; margin: 0 auto;}
+#logo .color_info li:nth-child(1) .circle {background-color: #FF7B00; opacity: 0.6;}
+#logo .color_info li:nth-child(2) .circle {background-color: #FFC700; opacity: 0.6;}
+#logo .color_info li:nth-child(3) .circle {background-color: #FFC700;}
+#logo .color_info li p {width: 100%; font-size: 1.5rem; text-align: center; color: #6B7684; margin-top: 5%;}
+
+/* === with === */
+#with {height: 50vh; display: flex; align-items: center; justify-content: center;}
+#with h1 {font-size: 5.625rem;}
+
+/* === function1 === */
+#function1 {height: 250vh; background-image: url(../img/bg04.png),url(../img/bg04.png); background-size: 40%,40%; background-position: center 25%, center 80%; background-repeat: no-repeat;}
+#function1 .content {height: 250vh;}
+#function1 .info_box {width: 100%; height: 120vh;}
+#function1 img {width: 35%; margin-top: 10%;}
+#function1 .info_box:last-child{margin-top: 5%;}
+#function1 .info_box .text_box {width: 60%; height: 100%; float: right; display: flex; align-items: center; justify-content: center;}
+#function1 .info_box:last-child .text_box {float: left;}
+#function1 .text_box .text {width: 50%; padding: 5%; margin: 0 auto;}
+#function1 .text_box .text h1 {font-size: 2rem; font-weight: 600; color: #86B500;}
+#function1 .text_box .text h2 {font-size: 3.125rem; color: #333D4B; line-height: 1.2; margin-top: 5%;}
+#function1 .text_box .text p {font-size: 1.75rem; color: #6B7684; line-height: 1.5; margin-top: 5%;}
+
+/* === function2 === */
+#function2 {height: 160vh;}
+#function2 .content {height: 160vh;}
+#function2 .container {width: 80%; margin: 0 auto; margin-top: 5%;}
+#function2 .container h1.title {font-size: 2rem; font-weight: 600; color: #86B500;}
+#function2 .container .area {width: 100%;}
+#function2 .container .area li {width: 45%; height: 40vh; margin-top: 5%; float: left; padding: 1%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+#function2 .container .area li:nth-child(2),#function2 .container .area li:nth-child(4),#function2 .container .area li:nth-child(6){float: right;}
+#function2 .container .area li h1 {font-size: 4.375rem; color: #333D4B; margin-top: 3%;}
+#function2 .container .area li p {font-size: 1.625rem; color: #6B7684; line-height: 1.5; margin-top: 5%;}
+
+/* === function3 === */
+#function3 {height: 180vh; background-image: url(../img/bg05.png); background-size: 80%; background-position: center; background-repeat: no-repeat;}
+#function3 .content {height: 180vh;}
+#function3 h1 {font-size: 2rem; font-weight: 600; color: #86B500; margin-top: 5%;}
+#function3 p {font-size: 3.125rem; color: #333D4B; line-height: 1.2; margin-top: 5%}
+#function3 .function_container {width: 100%; margin-top: 15%;}
+#function3 .function_container .text_box {width: 30%; height: 20vh; margin-top: 15%; float: left; display: flex; align-items: center; justify-content: center;}
+#function3 .function_container .text_box:nth-child(2) {float: right;}
+#function3 .function_container .text_box p {font-size: 1.75rem; line-height: 1.3; color: #6B7684;}
+#function3 .function_container img {width: 35%; margin: 0 auto; display: block;}
+#function3 .drug_container {width: 100%; height: 20vh; position: relative; top: -23.5%;}
+#function3 .drug_container img {width: 10%;}
+#function3 .drug_container .drug {position: absolute; top: 0; left: 44%;}
+
+/* === function4 === */
+#function4 {height: 160vh; background-image: url(../img/bg05.png); background-size: 80%; background-repeat: no-repeat; background-position: center;}
+#function4 .content {height: 160vh;}
+#function4 .title {font-size: 2rem; font-weight: 600; color: #86B500; margin-top: 5%;}
+#function4 p {font-size: 3.125rem; color: #333D4B; line-height: 1.2; margin-top: 5%}
+#function4 .container {width: 80%; margin: 0 auto; margin-top: 5%;}
+#function4 .container .area {width: 100%;}
+#function4 .container .area li {width: 45%; height: 40vh; margin-top: 5%; float: left; padding: 1%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+#function4 .container .area img {width: 90%;}
+#function4 .container .area li:nth-child(2),#function4 .container .area li:nth-child(4){float: right;}
+#function4 .container .area li h1 {font-size: 4.375rem; color: #333D4B; margin-top: 3%;}
+#function4 .container .area li p {font-size: 1.625rem; color: #6B7684; line-height: 1.5; margin-top: 5%;}
+
+/* === service === */
+#service {height: 50vh; display: flex; align-items: center; justify-content: center; background-color: #000;}
+#service h1 {font-size: 4.375rem; color: #FFC800; font-weight: 900;}
+
+/* === footer === */
+footer {background-color: #FFC800;}
+footer .content {height: 80vh;}
+footer ul {width: 100%; display: flex; justify-content: space-between; margin-top: 10%;}
+footer li {width: 30%; text-align: center;}
+footer li img {width: 60%; margin: 0 auto; display: block;}
+footer li p {font-size: 1.25rem; line-height: 2; font-weight: 600; margin-top: 3%;}
+footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top: 1%;}
+
+/* === table Ver */
+@media only screen and (min-width:768px) and (max-width:1024px){
+    html {font-size: 14px;}
+    section {height: 60vh;}
+
+    /* === user === */
+    #user .all_box .title {width: 100%; font-size: 1.5rem;}
+
+    /* === project === */
+    #project {height: 80vh;}
+    #project .text_box p {font-size: 1.35rem;}
+
+    /* === design === */
+    #design p {font-size: 2.5rem;}
+
+    /* === logo === */
+    #logo p.info_text {font-size: 1.5rem;}
+    #logo .logo_info h1.logo_text {font-size: 2rem;}
+
+    /* === function1 === */
+    #function1 {height: 180vh;}
+    #function1 .info_box {height: 80vh;}
+    #function1 .info_box .text_box {height: 70%;}
+    #function1 .info_box:last-child{margin-top: 0%;}
+    #function1 .text_box .text h2 {font-size: 2rem;}
+    #function1 .text_box .text p {font-size: 1.3rem;}
+
+    /* === function2 === */
+    #function2 .container .area li img {width: 90%;}
+    #function2 .container .area li h1 {font-size: 3.5rem;}
+    #function2 .container .area li p {font-size: 1.3rem;}
+
+    /* === function3 === */
+    #function3 {height: 120vh;}
+    #function3 .drug_container {top: -15%;}
+
+    /* === function4 === */
+    #function4 {height: 140vh;}
+    #function4 .content {height: 140vh;}
+    #function4 .container .area li h1 {font-size: 3rem;}
+    #function4 .container .area li p {font-size: 1.132rem;}
+
+
+    /* === footer === */
+    #footer {height: 50vh;}
+    #footer .content {height: 50vh;}
+    #footer ul {margin-top: 5%;}
+}
+
+/* === phone Ver */
+@media only screen and (min-width:360px) and (max-width:767px){
+
+    #index {height: 140vh;}
+    #index .mockup{width: 100%; display: block; margin-top: 80%;}
+    #index h1 {position: relative; top: -130%; width: 100%; text-align: center;}
+    #index p {position: relative; top: -105%; width: 100%; text-align:center;}
+
+    #user {height: 180vh;}
+    #user .all_box {flex-direction: column;}
+    #user .all_box li {width: 50%; margin-top: 5%;}
+    #user .all_box .title {font-size: 1.3rem;}
+    #user .text_box h1 {font-size: 2.7rem;}
+
+    #advice {height: 40vh;}
+    #advice h1 {font-size: 3rem;}
+
+    #video {height: 40vh;}
+
+    #project {height: 60vh;}
+    #project .text_box {width: 100%;}
+    #project .text_box h1 {font-size: 2rem;}
+    #project .text_box p {font-size: 1rem;}
+
+    #design {height: 40vh;}
+    #design h1 {font-size: 1.6rem;}
+    #design p {font-size: 2rem;}
+
+    #logo {height: 80vh;}
+    #logo h1 {font-size: 1.6rem;}
+    #logo p {font-size: 2.8rem;}
+    #logo p.info_text {font-size: 1.3rem;}
+    #logo .ul-container {flex-direction: column;}
+    #logo .logo_info {width: 100%;}
+    #logo .color_info {width: 100%; margin-top: 10%;}
+
+    #with h1 {font-size: 4.5rem;}
+    
+    #function1 {height: 140vh;}
+    #function1 .info_box {height: 60vh; border: solid 1px red;}
+    #function1 .info_box .text_box {height: 80%;}
+    #function1 .text_box .text h1 {font-size: 1.8rem;}
+    #function1 .text_box .text h2 {font-size: 2rem;}
+    #function1 .text_box .text {width: 100%;}
+    #function1 .text_box .text p {font-size: 1.2rem;}
+
+    #function2 {height: 280vh;}
+    #function2 .container h1.title {font-size: 2rem;}
+    #function2 .container .area li {width: 100%;  text-align: center;}
+    #function2 .container .area li:nth-child(2),#function2 .container .area li:nth-child(4),#function2 .container .area li:nth-child(6){float: left;}
+
+    #function3 {height: 80vh;}
+    #function3 .content {height: 80vh;}
+    #function3 .function_container .text_box {margin-top: 5%;}
+    #function3 .function_container .text_box p {font-size: 1rem;}
+
+
+    #function4 {height: 220vh;}
+    #function4 .container .area li {width: 100%; text-align: center;}
+    #function4 .container .area img {display: block; margin: 0 auto;}
+
+    #service h1 {font-size: 3rem;}
+
+    footer {height: 40vh;}
+    footer .content {height: 40vh;}
+    footer li p {font-size: 1rem;}
+    footer .copyright {margin-top: 3%;}
+}

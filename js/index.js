@@ -6,22 +6,22 @@ window.addEventListener("scroll", function () {
 
     if (scrollY > 150) {
         console.log("150 이상");
-        myHeader.style.height = 110 + "px";
-        myHeader.style.top = -100 + "px";
+        myHeader.style.height = 60 + "px";
+        myHeader.style.top = -55 + "px";
 
         myHeader.onmouseover = function () {
-            myHeader.style.height = 100 + "px";
+            myHeader.style.height = 60 + "px";
             myHeader.style.top = 0;
         }
 
         myHeader.onmouseout = function () {
-            myHeader.style.height = 110 + "px";
-            myHeader.style.top = -100 + "px";
+            myHeader.style.height = 60 + "px";
+            myHeader.style.top = -55 + "px";
         }
     }
     else {
         console.log("150 이하");
-        myHeader.style.height = 100 + "px";
+        myHeader.style.height = 60 + "px";
         myHeader.style.top = 0;
 
         myHeader.onmouseout = null;
@@ -51,7 +51,7 @@ let isDrugExecuted = false;
 window.addEventListener("scroll", function () {
     console.log(scrollY);
 
-    let mockup = document.querySelector(".mockup");
+    let mockup = document.querySelector(".drug_mockup");
     let intersectionObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting && !isDrugExecuted) {
@@ -138,13 +138,13 @@ let menu2 = document.querySelector("#nav2");
 let menu3 = document.querySelector("#nav3");
 let menu4 = document.querySelector("#nav4");
 
-let GoalSection = document.querySelector("#project_section");
+let GoalSection = document.querySelector("#project");
 let GoalSectionOffsetTop = GoalSection.offsetTop;
-let DesignSection = document.querySelector("#design_section"); 
+let DesignSection = document.querySelector("#design"); 
 let DesignSectionOffsetTop = DesignSection.offsetTop;
-let FunctionSection = document.querySelector("#function1_section");
+let FunctionSection = document.querySelector("#function1");
 let FunctionSectionOffsetTop = FunctionSection.offsetTop;
-let ContactSection = document.querySelector("#footer_section"); 
+let ContactSection = document.querySelector("#footer"); 
 let ContactSectionOffsetTop = ContactSection.offsetTop;
 
 function ScrollGoalSection(){
@@ -180,5 +180,3 @@ menu2.addEventListener("click", ScrollDesignSection);
 menu3.addEventListener("click", ScrollFunctionSection);
 menu4.addEventListener("click", ScrollContactSection);
 
-
-// fucntion1_section 스크롤 시 스르륵 등장
