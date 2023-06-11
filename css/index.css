@@ -37,6 +37,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
     background-image: url(../img/bg01.png);
     background-size: 100%;
     background-position: top;
+    background-color: #FFDF64;
     background-repeat: no-repeat;
 }
 
@@ -44,6 +45,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
     font-size: 2.5rem;
     font-weight: 500;;
     margin-top: 15%;
+    display: block;
     /* border: solid 1px blue; */
 }
 
@@ -113,6 +115,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3% 0 3% 0;
     /* border: solid 1px blue; */
 }
 
@@ -148,7 +151,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 
 #project_section {
     height: 130vh;
-    margin-top: 0;
+    /* margin-top: 0; */
     background-image: url(../img/bg_img01.png),url(../img/bg_img02.png),url(../img/bg_img03.png);
     background-size: 45%,35%,40%;
     background-repeat: no-repeat;
@@ -161,7 +164,8 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 }
 
 #project_section p {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    /* border: solid 1px red; */
 }
 
 #project_section .text {
@@ -175,6 +179,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
     margin-top: 80px;
     color: #6B7684;
     line-height: 1.6;
+    /* border: solid 1px blue; */
 }
 
 #project_section #text_right {
@@ -258,6 +263,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 #logo_section .logo_box .logos li {
     width: 40%;
     float: left;
+    /* border: solid 1px red; */
 }
 
 #logo_section .logo_box .logos li:last-child {
@@ -363,12 +369,12 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 
 #function1_section .text_box {
     width: 40%;
-    height: 41%;
+    height: 45%;
     margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 1px green;
+    /* border: solid 1px green; */
 }
 
 #function1_section .text_box h2 {
@@ -396,7 +402,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 #function1_section .text {
     width: 100%;
     height: auto;
-    border: solid 1px green;
+    /* border: solid 1px green; */
 }
 
 #function1_section .left {
@@ -468,6 +474,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 #function2_section .function_box .section h1 {
     font-size: 4.375rem;
     color: #333D4B;
+    /* border: solid 1px red; */
 }
 
 #function2_section .function_box .section p {
@@ -658,7 +665,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 }
 
 #function4_section .area h1 {
-    font-size: 70px;
+    font-size: 4.375rem;
     color: #333D4B;
 }
 
@@ -696,7 +703,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
 
 #footer_section #footer_box {
     width: 90%;
-    height: 60%;
+    height: auto;
     margin: 0 auto;
     margin-top: 5%;
     /* border: solid 1px blue; */
@@ -706,6 +713,8 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
     width: 100%;
     height: auto;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     /* border: solid 1px red; */
 }
 
@@ -738,7 +747,7 @@ header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 6%;
+    margin-top: 3%;
     /* border: solid 1px aqua; */
 }
 
@@ -767,137 +776,161 @@ button:hover {
 }
 
 /* Table ver. */
-@media only screen and (max-width:1280px) {
-    section {
-        /* border: solid 1px red; */
-        box-sizing: border-box;
-    }
+@media only screen and (max-width:1024px) {
+    #index_section {height: auto; margin-top: 100px;}
+    #index_section p {font-size: 28px; margin-top: 18%;}
+    #index_section h1 {font-size: 40px; margin-top: 2%;}
 
-    #index_section p {
-        font-size: 30px;
-        margin-top: 30%;
-    }
+    #user_section {height: auto;}
+    #user_section .text_box {width: 100%; font-size: 16px;}
+    #user_section #user_text h1 {font-size: 48px;}
 
-    #index_section h1 {
-        font-size: 40px;
-    }
+    #advise_section {height: 40vh;}
+    #advise_section h1 {font-size: 50px;}
 
-    #index_section #button {
-        font-size: 22px;
-    }
+    #video_section {height: 576px;}
 
-    #user_section #all_user {
-        margin-top: 10%;
-    }
+    #project_section {height: 80vh; background-size: 50%,40%,45%; background-position: -5% -10%,45% 20%,100% 100%}
+    #project_section .text {width: 90%;}
+    #project_section .text:last-child {margin-top: 20%;}
+    #project_section h1 {font-size: 40px;}
+    #project_section p {font-size: 22px;}
 
-    #user_section .text_box {
-        width: 80%;
-        font-size: 20px;
-        /* border: solid 1px red; */
-    }
+    #design_section {height: 40vh;}
+    #design_section p {font-size: 30px;}
+    #design_section h1 {font-size: 34px;}
 
-    #function1_section {
-        height: 200vh;
-    }
+    #logo_section {height: 80vh;}
+    #logo_section h2 {font-size: 30px;}
+    #logo_section h1 {font-size: 34px;}
+    #logo_section p {font-size: 26px; margin-top: 1%;}
+    #logo_section .logo_box .logos:first-child {width: 100%;}
+    #logo_section .logo_box .logos:first-child li:first-child {margin-left: 5%;}
+    #logo_section .logo_box .logos:last-child {width: 100%;}
+    #logo_section .logo_box .logos p {font-size: 48px; margin:15% 0 0 7%;}
 
-    #function1_section img {
-        width: 35%;
-        /* border: solid 1px red; */
-    }
+    #with_section {height: 40vh;}
+    #with_section h1 {font-size: 60px;}
 
-    #function1_section .right_text {
-        margin-left: 0;
-    }
+    #function1_section {height: 130vh;}
+    #function1_section .text_box {margin-top: 7%; width: 48%; height: 42%;}
+    #function1_section .text_box h2 {font-size: 30px; padding-top: 3%;}
+    #function1_section .text_box h1 {font-size: 34px;}
+    #function1_section .text_box p {font-size: 26px; width: 100%;}
+    #function1_section .left_box {margin-left: 0;}
 
-    #function1_section .text_box {
-        height: 25%;
-        padding-top: 20%;
-        /* border: solid 1px red; */
-    }
+    #function2_section {height: 120vh;}
+    #function2_section .text_box {width: 100%;}
+    #function2_section .text_box p {font-size: 30px;}
+    #function2_section .function_box {margin-top: 50px;}
+    #function2_section .function_box .section {width: 50%; height: 30%;}
+    #function2_section .function_box .section h1 {font-size: 38px;}
+    #function2_section .function_box .section p {font-size: 18px;}
+    #function2_section .function_box .second {margin-top: 5%;}
 
-    #function1_section .text_box h1 {
-        font-size: 40px;
-    }
+    #function3_section {height: 80vh;}
+    #function3_section .text_box p {font-size: 30px;}
+    #function3_section .text_box h1 {font-size: 36px;}
+    #function3_section .mockup {margin-top: 10%;}
+    #function3_section .textbox {height: 50%;}
+    #function3_section .text {width: 24%; height: 25%;}
+    #function3_section .text p {font-size: 16px;}
+    #function3_section .drug_area {top: -40%;}
 
-    #function1_section .text_box p {
-        font-size: 24px;
-    }
+    #function4_section {height: 100vh;}
+    #function4_section #text_box p {font-size: 30px;}
+    #function4_section #text_box h1 {font-size: 34px;}
+    #function4_section #function_area {height: 70%;}
+    #function4_section .area {width: 47%; height: 40%;}
+    #function4_section .area h1 {font-size: 42px;}
+    #function4_section .area p {font-size: 18px;}
+    #function4_section .left {margin-left: 3%;}
+    #function4_section .right {margin-right: 3%;}
 
-    #function2_section .function_box {
-        margin-top: 20%;
-    }
+    #service_section {height: 40vh;}
+    #service_section h1 {font-size: 48px;}
 
-    #function2_section .function_box .section {
-        width: 45%;
-        /* border: solid 1px red; */
-    }
-
-    #function2_section .function_box .section h1 {
-        font-size: 50px;
-    }
-
-    #function2_section .function_box .section p {
-        font-size: 22px;
-    }
-
-    #function2_section .function_box .second {
-        margin-top: 10%;
-    }
-
-    #function3_section {
-        height: 150vh;
-    }
-
-    #function3_section .text {
-        width: 22%;
-        height: 10%;
-        /* border: solid 1px red; */
-    }
-
-    #function3_section .text p {
-        font-size: 24px;
-    }
-
-    #function4_section .area {
-        width: 36%;
-        /* border: solid 1px red; */
-    }
-
-    #function4_section .area h1 {
-        font-size: 60px;
-    }
-
-    #function4_section .area p {
-        font-size: 19px;
-    }
-
-    #footer_section #footer_box .area {
-        margin-top: 10%;
-    }
-
-    #footer_section #footer_box .area p {
-        font-size: 24px;
-    }
+    #footer_section {height: 40vh;}
+    #footer_section #footer_box {margin-top: 8%;}
+    #footer_section #footer_box .area img {width: 80%;}
+    #footer_section #footer_box .area p {font-size: 16px;}
+    #footer_section #copyright {margin-top: 3%;}
 }
 
+
 /* 모바일 버전 */
-@media only screen and (max-width:720px) {
-    #header #nav {
-        width: 100%;
-    }
+@media only screen and (max-width:480px){
+    #header #site_nav {width: 100%;}
 
-    #index_section p {
-        font-size: 30px;
-        width: 20%;
-        border: solid 1px red;
-    }
+    #index_section {height: 100vh; background-position-y: 80vh;}
+    #index_section #mockup_img {width: 100%; margin-top: 20%;}
+    #index_section p {font-size: 30px; text-align: center;}
+    #index_section h1 {font-size: 38px; text-align: center; margin-top: 8%;}
 
-    #index_section h1 {
-        width: 80%;
-        border: solid 1px red;
-    }
+    #user_section #all_user {flex-direction: column;}
+    #user_section .user_box {width: 100%;}
+    #user_section .text_box {font-size: 30px;}
+    #user_section #user_text h1 {font-size: 30px;}
 
-    #index_section #mockup_img {
-        width: 30%;
-    }
+    #advise_section h1 {font-size: 34px;}
+
+    #video_section {height: 270px;}
+
+    #project_section .text {width: 100%;}
+    #project_section h1 {font-size: 26px;}
+    #project_section p {font-size: 16px; padding: 1%;}
+    #project_section .text p {margin-top: 4%;}
+    #project_section #text_right {text-align: left; margin-right: 0;}
+
+    #design_section {background-size: 50%; background-position-y: center;}
+    #design_section p {font-size: 20px;}
+    #design_section h1 {font-size: 26px;}
+
+    #logo_section h2 {font-size: 26px;}
+    #logo_section h1 {font-size: 28px;}
+    #logo_section p {font-size: 18px;}
+    #logo_section .logo_box .logos  h1 {font-size: 20px;}
+    #logo_section .logo_box .logos p {font-size: 20px;}
+    #logo_section .logo_box .logos:last-child p {font-size: 16px; text-align: center;}
+
+    #with_section h1 {font-size: 44px;}
+
+    #function1_section {height: 270vh;}
+    #function1_section img {width: 100%;}
+    #function1_section .text_box {width: 100%; height: auto; margin: 0 auto; margin-top: 10%;}
+    #function1_section .right {margin-right: 0;}
+
+    #function2_section {height: 220vh;}
+    #function2_section .text_box p {font-size: 26px;}
+    #function2_section .function_box {width: 100%; height: auto;}
+    #function2_section .function_box .section {width: 100%; height: auto; margin-top: 10%;}
+
+    
+    #function3_section .text_box p {font-size: 26px;}
+    #function3_section .textbox {margin-top: 10%;}
+    #function3_section .text {width: 25%; margin-top: 20%;}
+    #function3_section .text p {font-size: 10px;}
+    #function3_section .left {margin-left: 1%;}
+    #function3_section .right {margin-right: 1%;}
+    #function3_section .drug_area {top: -33%;}
+
+    #function4_section {height: 160vh;}
+    #function4_section #text_box p {font-size: 26px;}
+    #function4_section #text_box h1 {font-size: 32px;}
+    #function4_section #function_area {margin-top: 3%; height: auto;}
+    #function4_section .area {width: 100%; margin-top: 3%; text-align: center;}
+    #function4_section .left {margin-left: 0;}
+    #function4_section .right {margin-right: 0;}
+
+    #service_section h1 {font-size: 44px;}
+
+    #footer_section {height: 270px;}
+    #footer_section #footer_box {width: 100%;}
+    #footer_section #footer_box .area {width: 100%; height: 100%;}
+    #footer_section #footer_box .second {margin-left: 0;}
+    #footer_section #footer_box .area p {font-size: 8px;}
+    #footer_section #copyright {margin-top: 8%;}
+    #footer_section #copyright p {font-size: 8px;}
+
+    #top {bottom: 10px; right: 10px;}
 }
