@@ -184,8 +184,8 @@ menu4.addEventListener("click", ScrollContactSection);
 // === with === 
 
 window.addEventListener('scroll', function () {
-    var section = document.getElementById('with');
-    var scrollPercentage = (section.getBoundingClientRect().top / window.innerHeight) * 100;
+    let section = document.getElementById('with');
+    let scrollPercentage = (section.getBoundingClientRect().top / window.innerHeight) * 100;
 
     if (scrollPercentage > 25) {
         section.style.backgroundColor = '#FFF';
@@ -194,4 +194,3 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// === function1 === 
