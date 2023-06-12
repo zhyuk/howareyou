@@ -55,7 +55,6 @@ window.addEventListener("scroll", function () {
     let intersectionObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting && !isDrugExecuted) {
-                // 요소가 보여질 때 실행할 JavaScript 코드 작성
                 drug()
                 isDrugExecuted = true;
             }
@@ -180,3 +179,19 @@ menu2.addEventListener("click", ScrollDesignSection);
 menu3.addEventListener("click", ScrollFunctionSection);
 menu4.addEventListener("click", ScrollContactSection);
 
+
+
+// === with === 
+
+window.addEventListener('scroll', function () {
+    var section = document.getElementById('with');
+    var scrollPercentage = (section.getBoundingClientRect().top / window.innerHeight) * 100;
+
+    if (scrollPercentage > 25) {
+        section.style.backgroundColor = '#FFF';
+    } else {
+        section.style.backgroundColor = '#FFDF64';
+    }
+});
+
+// === function1 === 

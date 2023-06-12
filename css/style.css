@@ -5,10 +5,10 @@
 
 /* === common === */
 html {scroll-behavior: smooth; font-size: 16px; box-sizing: border-box;}
-body {box-sizing: border-box; font-family: "Pretendard Variable"; font-weight: 500; background-color: rgba(250, 250, 250, 235);}
+body {box-sizing: border-box; font-family: "Pretendard Variable"; font-weight: 500; background-color: #fff;}
 html,body {width: 100%; height: 100%;}
-header {width: 100%; height: 100px; background-color: #ffdf64; transition: all 1s; position: fixed; top: 0; left: 0;}
-section {width: 100%; height: 100vh; background-color: #fff; margin-top:50px; display: flex;}
+header {width: 100%; height: 100px; background-color: #FFDF64; transition: all 1s; position: fixed; top: 0; left: 0; border-bottom: solid 1px #000;}
+section {width: 100%; height: 100vh; background-color: rgba(250, 250, 250, 235); margin-top:50px; display: flex;}
 footer {width: 100%; height: 80vh; display: flex;}
 
 /* === public === */
@@ -22,7 +22,7 @@ button:hover {cursor: pointer; color: #fff;}
 
 /* === header === */
 header .content {height: 60px;}
-.site_nav {display: flex; align-items: center; float: right;}
+.site_nav {display: flex; align-items: center; width: 100%; border: solid 1px red; justify-content: space-between;}
 .site_nav_menu {display: flex; font-size: 2rem;}
 .site_nav_menu li {padding: 10px;}
 .site_nav_menu li:hover {color: #fff; cursor: pointer;}
@@ -34,7 +34,7 @@ header .content {height: 60px;}
 #index .mockup {width: 35%; float: right; margin-top: 8%;}
 
 /* === user === */
-#user {margin-top: 0;}
+#user {margin-top: 0; background-color: #fff;}
 #user .all_box {width: 100%; display: flex; align-items: center; justify-content: space-between;}
 #user .all_box li {width: 30%; }
 #user .all_box li img {width: 100%;}
@@ -57,12 +57,12 @@ header .content {height: 60px;}
 #project .text_box p {font-size: 1.5rem; margin-top: 5%;     color: #6B7684; line-height: 1.6;}
 
 /* === design === */
-#design {background-image: url(../img/mockup02.png); background-size: 60% 100%; background-repeat: no-repeat; background-position: 100%;}
+#design {background-image: url(../img/mockup02.png); background-size: 60% 100%; background-repeat: no-repeat; background-position: 100%; background-color: #fff;}
 #design h1 {font-size: 2rem; font-weight: 600; color: #86B500; margin-top: 15%;}
 #design p {font-size: 2.875rem; color: #333D4B; margin-top: 5%; line-height: 1.5;}
 
 /* === logo === */
-#logo h1 {font-size: 2rem; font-weight: 600; color: #86B500; margin-top: 15%;}
+#logo h1 {font-size: 2rem; font-weight: 600; color: #86B500; margin-top: 5%;}
 #logo p {font-size: 3.375rem; color: #333D4B; margin-top: 5%;}
 #logo p.info_text {font-size: 1.875rem; color: #6B7684; line-height: 1.3; margin-top: 1%;}
 #logo .ul-container {width: 100%; display: flex; justify-content: space-between; margin-top: 5%;}
@@ -71,7 +71,7 @@ header .content {height: 60px;}
 #logo .logo_info li img {width: 30%; float: left;}
 #logo .logo_info h1 {width: 100%;}
 #logo .logo_info li h1 {font-size: 1.5rem; color: #6B7684;}
-#logo .logo_info h1.logo_text {width: 50%; color: #FFC700; font-size: 3.5rem; font-weight: 900; float: left; margin-left: 5%; position: relative; top: -10%;}
+#logo .logo_info h1.logo_text {width: 50%; color: #FFC700; font-size: 3.5rem; font-weight: 900; float: left; margin-left: 5%; position: relative; top: 5%;}
 #logo .color_info {width: 49%; float: right; display: flex; justify-content: space-between;}
 #logo .color_info li {width: 30%; text-align: center;}
 #logo .color_info .circle {width: 100px; height: 100px; border-radius: 50%; margin: 0 auto;}
@@ -81,8 +81,10 @@ header .content {height: 60px;}
 #logo .color_info li p {width: 100%; font-size: 1.5rem; text-align: center; color: #6B7684; margin-top: 5%;}
 
 /* === with === */
-#with {height: 50vh; display: flex; align-items: center; justify-content: center;}
-#with h1 {font-size: 5.625rem;}
+#with {height: 50vh; display: flex; align-items: center; justify-content: center; background-color: rgba(250, 250, 250, 235); transition: background-color 1s ease;}
+#with h1 {font-size: 5.625rem; position: relative;}
+
+
 
 /* === function1 === */
 #function1 {height: 250vh; background-image: url(../img/bg04.png),url(../img/bg04.png); background-size: 40%,40%; background-position: center 25%, center 80%; background-repeat: no-repeat;}
@@ -146,13 +148,84 @@ footer ul {width: 100%; display: flex; justify-content: space-between; margin-to
 footer li {width: 30%; text-align: center;}
 footer li img {width: 60%; margin: 0 auto; display: block;}
 footer li p {font-size: 1.25rem; line-height: 2; font-weight: 600; margin-top: 3%;}
-footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top: 1%;}
+footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top: 5%;}
+
+/* === PC small Ver */
+@media only screen and (width:1440px){
+    html {font-size: 14px;}
+    section {height: 810px;}
+
+    /* === index === */
+    #index img {
+        width: 50%;
+    }
+    /* === user === */
+    #user .all_box .title {width: 100%; font-size:2rem;}
+
+    /* === project === */
+    #project .text_box {height: 250px;}
+    #project .text_box:last-child {margin-top: 3%;}
+    #project .text_box p {font-size: 1.35rem;}
+
+    /* === design === */
+    #design p {font-size: 2.5rem;}
+
+    /* === logo === */
+    #logo p.info_text {font-size: 1.5rem;}
+    #logo .logo_info h1.logo_text {font-size: 2rem;}
+
+    /* === with === */
+    #with {height: 405px;}
+
+    /* === function1 === */
+    #function1 {height: 180vh;}
+    #function1 .info_box {height: 80vh;}
+    #function1 .info_box .text_box {height: 70%;}
+    #function1 .info_box:last-child{margin-top: 0%;}
+    #function1 .text_box .text {width: 80%;}#function1 .text_box .text h1 {font-size: 3rem;}
+    #function1 .text_box .text h2 {font-size: 3.4rem;}
+    #function1 .text_box .text p {font-size: 2.8rem;}
+
+    /* === function2 === */
+    #function2 {height: 120vh;}
+    #function2 .container h1.title {font-size: 3rem;}
+    #function2 .container .area li {height: 30vh;}
+    #function2 .container .area li img {width: 90%;}
+    #function2 .container .area li h1 {font-size: 4rem;}
+    #function2 .container .area li p {font-size: 1.8rem;}
+
+    /* === function3 === */
+    #function3 {height: 100vh;}
+    #function3 h1 {font-size: 3rem;}
+    #function3 p {font-size: 4.3rem;}
+    #function3 .function_container .text_box {margin-top: 8%;}
+    #function3 .function_container .text_box p {font-optical-sizing: 2rem;}
+    #function3 .drug_container {top: -11%;}
+
+    /* === function4 === */
+    #function4 {height: 100vh;}
+    #function4 .content {height: 100vh;}
+    #function4 .title {font-size: 3rem;}
+    #function4 p {font-size: 4.3rem;}
+    #function4 .container .area li {height: 30vh;}
+    #function4 .container .area li h1 {font-size: 3rem;}
+    #function4 .container .area li p {font-size: 1.5rem;}
+
+
+    /* === footer === */
+    #footer {height: 30vh;}
+    #footer .content {height: 30vh;}
+    #footer ul {margin-top: 5%;}
+    footer li p {font-size: 1.4rem;}
+}
 
 /* === table Ver */
-@media only screen and (min-width:768px) and (max-width:1024px){
+@media only screen and (width:1024px){
     html {font-size: 14px;}
     section {height: 60vh;}
 
+    #index p {font-size: 2rem; margin-top: 13%;}
+    #index h1 {font-size: 4rem;}
     /* === user === */
     #user .all_box .title {width: 100%; font-size: 1.5rem;}
 
@@ -182,7 +255,7 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
 
     /* === function3 === */
     #function3 {height: 120vh;}
-    #function3 .drug_container {top: -15%;}
+    #function3 .drug_container {top: -12%;}
 
     /* === function4 === */
     #function4 {height: 140vh;}
@@ -192,52 +265,59 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
 
 
     /* === footer === */
-    #footer {height: 50vh;}
-    #footer .content {height: 50vh;}
+    #footer {height: 45vh;}
+    #footer .content {height: 45vh;}
     #footer ul {margin-top: 5%;}
 }
 
+
 /* === phone Ver */
-@media only screen and (min-width:360px) and (max-width:767px){
+@media only screen and (max-width:480px){
+    html{font-size: 8px;}
 
-    #index {height: 140vh;}
-    #index .mockup{width: 100%; display: block; margin-top: 80%;}
-    #index h1 {position: relative; top: -130%; width: 100%; text-align: center;}
-    #index p {position: relative; top: -105%; width: 100%; text-align:center;}
+    #index {height: 100vh;}
+    #index .mockup{width: 100%; display: block; margin: 0 auto; margin-top: 50%;}
+    #index h1 {position: relative; top: -75%; width: 100%; text-align: center;}
+    #index p {position: relative; top: -75%; width: 100%; text-align:center;}
 
-    #user {height: 180vh;}
+    #user {height: 120vh;}
     #user .all_box {flex-direction: column;}
     #user .all_box li {width: 50%; margin-top: 5%;}
-    #user .all_box .title {font-size: 1.3rem;}
+    #user .all_box .title {font-size: 1.8rem;}
     #user .text_box h1 {font-size: 2.7rem;}
 
-    #advice {height: 40vh;}
+    #advice {height: 270px;}
     #advice h1 {font-size: 3rem;}
 
-    #video {height: 40vh;}
+    #video {height: 270px;}
 
-    #project {height: 60vh;}
+    #project {height: 405px}
     #project .text_box {width: 100%;}
+    #project .text_box:last-child {margin-top: 0%;}
     #project .text_box h1 {font-size: 2rem;}
     #project .text_box p {font-size: 1rem;}
 
-    #design {height: 40vh;}
+    #design {height: 270px;}
     #design h1 {font-size: 1.6rem;}
     #design p {font-size: 2rem;}
 
-    #logo {height: 80vh;}
+    #logo {height: 540px;}
     #logo h1 {font-size: 1.6rem;}
     #logo p {font-size: 2.8rem;}
     #logo p.info_text {font-size: 1.3rem;}
     #logo .ul-container {flex-direction: column;}
     #logo .logo_info {width: 100%;}
-    #logo .color_info {width: 100%; margin-top: 10%;}
+    #logo .color_info {width: 100%; margin-top: 15%;}
 
+
+    #with {height: 270px;}
     #with h1 {font-size: 4.5rem;}
     
-    #function1 {height: 140vh;}
-    #function1 .info_box {height: 60vh; border: solid 1px red;}
+    #function1 {height: 80vh;}
+    #function1 .content {height: 80vh;}
+    #function1 .info_box {height: 40vh;}
     #function1 .info_box .text_box {height: 80%;}
+    #function1 .info_box:last-child {margin-top: 3%;}
     #function1 .text_box .text h1 {font-size: 1.8rem;}
     #function1 .text_box .text h2 {font-size: 2rem;}
     #function1 .text_box .text {width: 100%;}
@@ -248,20 +328,22 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     #function2 .container .area li {width: 100%;  text-align: center;}
     #function2 .container .area li:nth-child(2),#function2 .container .area li:nth-child(4),#function2 .container .area li:nth-child(6){float: left;}
 
-    #function3 {height: 80vh;}
-    #function3 .content {height: 80vh;}
+    #function3 {height: 60vh;}
+    #function3 .content {height: 60vh;}
     #function3 .function_container .text_box {margin-top: 5%;}
     #function3 .function_container .text_box p {font-size: 1rem;}
+    #function3 .drug_container {top: -22%;}
 
 
-    #function4 {height: 220vh;}
+    #function4 {height: 180vh;}
     #function4 .container .area li {width: 100%; text-align: center;}
     #function4 .container .area img {display: block; margin: 0 auto;}
 
+    #service {height: 40vh;}
     #service h1 {font-size: 3rem;}
 
-    footer {height: 40vh;}
-    footer .content {height: 40vh;}
+    footer {height: 30vh;}
+    footer .content {height: 30vh;}
     footer li p {font-size: 1rem;}
     footer .copyright {margin-top: 3%;}
 }
