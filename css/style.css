@@ -178,9 +178,9 @@ footer li p {font-size: 1.25rem; line-height: 2; font-weight: 600; margin-top: 3
 
     /* === function1 === */
     #function1 {height: 200vh;}
-    #function1 .info_box {height: 80vh; border: solid 1px red;}
+    #function1 .info_box {height: 80vh;}
     #function1 img {margin-top: 1%;}
-    #function1 .info_box .text_box {height: 100%; border: solid 1px red;}
+    #function1 .info_box .text_box {height: 100%;}
     #function1 .info_box:last-child{margin-top: 15%;}
     #function1 .text_box .text {width: 80%;}
     #function1 .text_box .text h1 {font-size: 3rem;}
