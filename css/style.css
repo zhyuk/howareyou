@@ -147,11 +147,11 @@ footer ul {width: 100%; display: flex; justify-content: space-between; margin-to
 footer li {width: 30%; text-align: center;}
 footer li img {width: 60%; margin: 0 auto; display: block;}
 footer li p {font-size: 1.25rem; line-height: 2; font-weight: 600; margin-top: 3%;}
-footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top: 5%;}
+footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top: 7%;}
 
 /* === PC small Ver */
 @media only screen and (width:1440px){
-    html {font-size: 14px;}
+    html {font-size: 12px;}
     section {height: 810px;}
 
     /* === index === */
@@ -177,13 +177,15 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     #with {height: 405px;}
 
     /* === function1 === */
-    #function1 {height: 180vh;}
-    #function1 .info_box {height: 80vh;}
-    #function1 .info_box .text_box {height: 70%;}
-    #function1 .info_box:last-child{margin-top: 0%;}
-    #function1 .text_box .text {width: 80%;}#function1 .text_box .text h1 {font-size: 3rem;}
-    #function1 .text_box .text h2 {font-size: 3.4rem;}
-    #function1 .text_box .text p {font-size: 2.8rem;}
+    #function1 {height: 200vh;}
+    #function1 .info_box {height: 80vh; border: solid 1px red;}
+    #function1 img {margin-top: 1%;}
+    #function1 .info_box .text_box {height: 100%; border: solid 1px red;}
+    #function1 .info_box:last-child{margin-top: 15%;}
+    #function1 .text_box .text {width: 80%;}
+    #function1 .text_box .text h1 {font-size: 3rem;}
+    #function1 .text_box .text h2 {font-size: 4.25rem;}
+    #function1 .text_box .text p {font-size: 2.3rem;}
 
     /* === function2 === */
     #function2 {height: 120vh;}
@@ -194,12 +196,12 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     #function2 .container .area li p {font-size: 1.8rem;}
 
     /* === function3 === */
-    #function3 {height: 100vh;}
+    #function3 {height: 160vh;}
     #function3 h1 {font-size: 3rem;}
     #function3 p {font-size: 4.3rem;}
     #function3 .function_container .text_box {margin-top: 8%;}
-    #function3 .function_container .text_box p {font-optical-sizing: 2rem;}
-    #function3 .drug_container {top: -11%;}
+    #function3 .function_container .text_box p {font-size: 2rem;}
+    #function3 .drug_container {top: -18%;}
 
     /* === function4 === */
     #function4 {height: 100vh;}
@@ -212,10 +214,11 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
 
 
     /* === footer === */
-    #footer {height: 30vh;}
-    #footer .content {height: 30vh;}
+    #footer {height: 50vh;}
+    #footer .content {height: 50vh;}
     #footer ul {margin-top: 5%;}
     footer li p {font-size: 1.4rem;}
+    footer .copyright { margin-top: 4%;}
 }
 
 /* === table Ver */
@@ -254,7 +257,7 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
 
     /* === function3 === */
     #function3 {height: 120vh;}
-    #function3 .drug_container {top: -12%;}
+    #function3 .drug_container {top: -15%;}
 
     /* === function4 === */
     #function4 {height: 140vh;}
@@ -264,9 +267,9 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
 
 
     /* === footer === */
-    #footer {height: 45vh;}
-    #footer .content {height: 45vh;}
-    #footer ul {margin-top: 5%;}
+    #footer {height: 50vh;}
+    #footer .content {height: 50vh;}
+    #footer ul {margin-top: 4.5%;}
 }
 
 
@@ -344,5 +347,5 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     footer {height: 30vh;}
     footer .content {height: 30vh;}
     footer li p {font-size: 1rem;}
-    footer .copyright {margin-top: 3%;}
+    footer .copyright {margin-top: 10%;}
 }
