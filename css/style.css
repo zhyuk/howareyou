@@ -9,7 +9,7 @@ body {box-sizing: border-box; font-family: "Pretendard Variable"; font-weight: 5
 html,body {width: 100%; height: 100%;}
 header {width: 100%; height: 100px; background-color: #FFDF64; transition: all 1s; position: fixed; top: 0; left: 0;}
 section {width: 100%; height: 100vh; background-color: rgba(250, 250, 250, 235); margin-top:50px; display: flex;}
-footer {width: 100%; height: 80vh; display: flex;}
+footer {width: 100%; height: 800px; display: flex;}
 
 /* === public === */
 #wrap {width: 100%; max-width: 1920px ; height: 100%;}
@@ -142,12 +142,12 @@ header .content {height: 60px;}
 
 /* === footer === */
 footer {background-color: #FFC800;}
-footer .content {height: 80vh;}
+footer .content {height: 800px;}
 footer ul {width: 100%; display: flex; justify-content: space-between; margin-top: 10%;}
 footer li {width: 30%; text-align: center;}
 footer li img {width: 60%; margin: 0 auto; display: block;}
 footer li p {font-size: 1.25rem; line-height: 2; font-weight: 600; margin-top: 3%;}
-footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top: 7%;}
+footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top: 150px;}
 
 /* === PC small Ver */
 @media only screen and (width:1440px){
@@ -218,7 +218,7 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     #footer .content {height: 50vh;}
     #footer ul {margin-top: 5%;}
     footer li p {font-size: 1.4rem;}
-    footer .copyright { margin-top: 4%;}
+    footer .copyright {margin-top: 40px;}
 }
 
 /* === table Ver */
@@ -270,6 +270,7 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     #footer {height: 50vh;}
     #footer .content {height: 50vh;}
     #footer ul {margin-top: 4.5%;}
+    #footer .copyright {margin-top: 45px;}
 }
 
 
@@ -347,5 +348,5 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     footer {height: 30vh;}
     footer .content {height: 30vh;}
     footer li p {font-size: 1rem;}
-    footer .copyright {margin-top: 10%;}
+    footer .copyright {margin-top: 35px;}
 }
