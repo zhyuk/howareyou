@@ -257,7 +257,7 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
 
     /* === function3 === */
     #function3 {height: 120vh;}
-    #function3 .drug_container {top: -15%;}
+    #function3 .drug_container {top: -12%;}
 
     /* === function4 === */
     #function4 {height: 140vh;}
@@ -279,8 +279,8 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
 
     #index {height: 100vh;}
     #index .mockup{width: 100%; display: block; margin: 0 auto; margin-top: 50%;}
-    #index h1 {position: relative; top: -75%; width: 100%; text-align: center;}
-    #index p {position: relative; top: -75%; width: 100%; text-align:center;}
+    #index h1 {position: relative; top: -60%; width: 100%; text-align: center;}
+    #index p {position: relative; top: -60%; width: 100%; text-align:center;}
 
     #user {height: 120vh;}
     #user .all_box {flex-direction: column;}
@@ -334,7 +334,7 @@ footer .copyright {width: 100%; font-size: 1rem; text-align: center; margin-top:
     #function3 .content {height: 60vh;}
     #function3 .function_container .text_box {margin-top: 5%;}
     #function3 .function_container .text_box p {font-size: 1rem;}
-    #function3 .drug_container {top: -22%;}
+    #function3 .drug_container {top: -17%;}
 
 
     #function4 {height: 180vh;}
