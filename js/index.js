@@ -46,22 +46,31 @@ button.addEventListener("click", scrollToTop);
 
 // 약 펼치는 기능
 
-let isDrugExecuted = false;
+    let isDrugExecuted = false;
 
 window.addEventListener("scroll", function () {
     console.log(scrollY);
 
-    let mockup = document.querySelector(".drug_mockup");
-    let intersectionObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting && !isDrugExecuted) {
-                drug()
-                isDrugExecuted = true;
-            }
-        });
-    });
-    intersectionObserver.observe(mockup);
+// 대상 요소를 가져옵니다.
+const section = document.getElementById("function3");
 
+// Intersection Observer 생성자를 사용하여 콜백 함수를 등록합니다.
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    // 대상 요소가 화면에 진입하면 실행됩니다.
+    if (entry.intersectionRatio > 0.5 && !isDrugExecuted) {
+      drug();
+      isDrugExecuted = true;
+      // Intersection Observer를 해제합니다.
+      observer.unobserve(section);
+    }
+  });
+}, {
+  threshold: 0.5, // 영역이 화면의 50% 이상을 지날 때 콜백 실행
+});
+
+// 대상 요소를 관찰합니다.
+observer.observe(section);
 })
 
 function drug() {
