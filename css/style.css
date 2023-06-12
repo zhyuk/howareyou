@@ -7,7 +7,7 @@
 html {scroll-behavior: smooth; font-size: 16px; box-sizing: border-box;}
 body {box-sizing: border-box; font-family: "Pretendard Variable"; font-weight: 500; background-color: #fff;}
 html,body {width: 100%; height: 100%;}
-header {width: 100%; height: 100px; background-color: #FFDF64; transition: all 1s; position: fixed; top: 0; left: 0; border-bottom: solid 1px #000;}
+header {width: 100%; height: 100px; background-color: #FFDF64; transition: all 1s; position: fixed; top: 0; left: 0;}
 section {width: 100%; height: 100vh; background-color: rgba(250, 250, 250, 235); margin-top:50px; display: flex;}
 footer {width: 100%; height: 80vh; display: flex;}
 
@@ -22,10 +22,9 @@ button:hover {cursor: pointer; color: #fff;}
 
 /* === header === */
 header .content {height: 60px;}
-.site_nav {display: flex; align-items: center; width: 100%; border: solid 1px red; justify-content: space-between;}
-.site_nav_menu {display: flex; font-size: 2rem;}
-.site_nav_menu li {padding: 10px;}
-.site_nav_menu li:hover {color: #fff; cursor: pointer;}
+.site_nav {width: 100%; height: 100%; font-size: 2rem; display: flex; align-items: center; justify-content: space-between;}
+.site_nav li {padding: 10px; color: #3e3d3d;}
+.site_nav li:hover {color: #fff; cursor: pointer;}
 
 /* === index === */
 #index {margin-top: 0; background-image: url(../img/bg01.png); background-size: 100%; background-position: bottom; background-color: #FFDF64; background-repeat: no-repeat;}
@@ -70,7 +69,7 @@ header .content {height: 60px;}
 #logo .logo_info li {width: 50%; float: left; }
 #logo .logo_info li img {width: 30%; float: left;}
 #logo .logo_info h1 {width: 100%;}
-#logo .logo_info li h1 {font-size: 1.5rem; color: #6B7684;}
+#logo .logo_info li h1 {font-size: 1.5rem; color: #6B7684; margin-bottom: 5%;}
 #logo .logo_info h1.logo_text {width: 50%; color: #FFC700; font-size: 3.5rem; font-weight: 900; float: left; margin-left: 5%; position: relative; top: 5%;}
 #logo .color_info {width: 49%; float: right; display: flex; justify-content: space-between;}
 #logo .color_info li {width: 30%; text-align: center;}
